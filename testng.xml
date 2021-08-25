@@ -6,4 +6,9 @@
       <class name="com.qa.hs.tests.LoginTest"/>
     </classes>
   </test> <!-- Test -->
+  <test thread-count="5" name="LeadsPageTests">
+    <classes>
+      <class name="com.qa.hs.tests.LeadsModuleTest"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

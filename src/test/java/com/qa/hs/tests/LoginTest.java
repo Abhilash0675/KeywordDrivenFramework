@@ -6,7 +6,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 
@@ -24,7 +25,7 @@ public class LoginTest {
 	public WebDriver driver;
 
 	
-	@BeforeSuite
+	@BeforeTest
 	public void start() {
 		base = new Base();
 		prop = base.init_properties();
@@ -36,35 +37,29 @@ public class LoginTest {
 		
 	}
 	
-	@Test (priority = 1)
+	@Test (priority = 0)
 	public void loginTest() throws InterruptedException{
 		keyWordEngine = new KeyWordEngine(driver);
 		keyWordEngine.startExecution("login");
-		keyWordEngine.startExecution("create_contact_form");
-		Thread.sleep(5000);
-		//d
+		Thread.sleep(2000);
+		//done
 
 	}
 	
-//	@Test (priority = 2)
-//	public void leadsTest() throws InterruptedException{
-//		//keyWordEngine = new KeyWordEngine(driver);
-//		keyWordEngine.startExecution("leads");
-//		Thread.sleep(7000);
-//		//d
-//	}
+
 	
+	@AfterTest
+	public void end() {
+		driver.manage().deleteAllCookies();
+		driver.close();
+	}
 	
 	@AfterSuite
-	public void end() {
+	public void quit() {
 		driver.quit();
 	}
 	
-//	@Test
-//	public void signUpTest(){
-//		keyWordEngine = new KeyWordEngine();
-//		keyWordEngine.startExecution("signup");
-//	}
+
 	
 	
 	

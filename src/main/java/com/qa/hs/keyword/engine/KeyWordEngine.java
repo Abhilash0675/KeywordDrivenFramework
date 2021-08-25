@@ -21,7 +21,7 @@ import com.qa.hs.keyword.base.Base;
 /**
  * 
  * AUTHOR : ABHILASH 
- *// modify
+ *
  */
 public class KeyWordEngine {
 	
@@ -125,7 +125,7 @@ public class KeyWordEngine {
 					break;
 				case "wait":
 					System.out.println("++++++++++++++++++++++++++++++++++++++++++");
-					Thread.sleep(50000);
+					Thread.sleep(30000);
 					System.out.println("===========================================");
 					break;
 				case "id":
