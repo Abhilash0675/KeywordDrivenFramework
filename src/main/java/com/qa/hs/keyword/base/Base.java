@@ -31,18 +31,18 @@ public class Base {
 				driver = new ChromeDriver();
 			}
 		} 
-//		else if(browserName.equals("firefox")){
-//			System.setProperty("webdriver.gecko.driver", "/Users/NaveenKhunteta/Downloads/geckodriver");
-//			driver = new FirefoxDriver();
-//		}
+		else if(browserName.equals("firefox")){
+			System.setProperty("webdriver.gecko.driver", "");
+			driver = new FirefoxDriver();
+		}
 		return driver;
 	}
 	
 	public Properties init_properties(){
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("/home/naveen/git/KeywordDrivenFrameworkSetup/src/main/java/com/qa/hs/keyword/config/config.properties");
-					//+ "/src/main/java/com/qa/hs/keyword/config/config.properties");
+			FileInputStream ip = new FileInputStream("C:\\selenium-automation\\KeywordDrivenFramework-master\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
+					
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

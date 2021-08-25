@@ -51,7 +51,7 @@ public class KeyWordEngine {
 		FileInputStream file = null;
 		try {
 			file = new FileInputStream(SCENARIO_SHEET_PATH);
-			System.out.println("------------ able to acccess file ---------");
+			//System.out.println("------------ able to acccess file ---------");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -69,14 +69,14 @@ public class KeyWordEngine {
 		int k = 0;
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
 			//try {
-			System.out.println("ITERATION ------------- i: "+i);
-			System.out.println("TOTAL ROWS ---- : "+sheet.getLastRowNum());
+			//System.out.println("ITERATION ------------- i: "+i);
+			//System.out.println("TOTAL ROWS ---- : "+sheet.getLastRowNum());
 				String locatorType = sheet.getRow(i + 1).getCell(k + 1).toString().trim();
 				String locatorValue = sheet.getRow(i + 1).getCell(k + 2).toString().trim();
 				String action = sheet.getRow(i + 1).getCell(k + 3).toString().trim();
-				System.out.println(" *********** action ************* : "+action);
+			//	System.out.println(" *********** action ************* : "+action);
 				String value = sheet.getRow(i + 1).getCell(k + 4).toString().trim();
-				System.out.println(" *********** value ************* : "+value);
+				//System.out.println(" *********** value ************* : "+value);
 
 
 				switch (action) {
@@ -98,10 +98,10 @@ public class KeyWordEngine {
 //					System.out.println(" *********** exit got url ************* : "+value);
 					if (value.isEmpty() || value.equals("NA")) {
 						driver.get(prop.getProperty("url"));
-						System.out.println(" *********** got url ************* : "+value);
+						//System.out.println(" *********** got url ************* : "+value);
 					} else {
 						driver.get(value);
-						System.out.println(" *********** got url ************* : "+value);
+						//System.out.println(" *********** got url ************* : "+value);
 						//Thread.sleep(2000);
 					}
 					break;
@@ -124,9 +124,9 @@ public class KeyWordEngine {
 					Thread.sleep(5000);
 					break;
 				case "wait":
-					System.out.println("++++++++++++++++++++++++++++++++++++++++++");
-					Thread.sleep(30000);
-					System.out.println("===========================================");
+					//System.out.println("++++++++++++++++++++++++++++++++++++++++++");
+					Thread.sleep(20000);
+					//System.out.println("===========================================");
 					break;
 				case "id":
 					element = driver.findElement(By.id(locatorValue));
@@ -139,7 +139,7 @@ public class KeyWordEngine {
 						element.isDisplayed();
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
-						System.out.println("text from element : " + elementText);
+					//	System.out.println("text from element : " + elementText);
 					}
 					locatorType = null;
 					break;
@@ -155,7 +155,7 @@ public class KeyWordEngine {
 						element.isDisplayed();
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
-						System.out.println("text from element : " + elementText);
+						//System.out.println("text from element : " + elementText);
 					}
 					locatorType = null;
 					break;
@@ -164,7 +164,7 @@ public class KeyWordEngine {
 //					wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(locatorValue))));
 //					System.out.println(" WAITED TILL ELEMENT FOUND");
 					element = driver.findElement(By.xpath(locatorValue));
-					System.out.println("ELEMENT FOUND  ---"+element);
+					//System.out.println("ELEMENT FOUND  ---"+element);
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
@@ -205,7 +205,7 @@ public class KeyWordEngine {
 						element.isDisplayed();
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
-						System.out.println("text from element : " + elementText);
+						//System.out.println("text from element : " + elementText);
 					}
 					locatorType = null;
 					break;
@@ -222,7 +222,7 @@ public class KeyWordEngine {
 						element.isDisplayed();
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
-						System.out.println("text from element : " + elementText);
+						//System.out.println("text from element : " + elementText);
 					}
 					locatorType = null;
 					break;
