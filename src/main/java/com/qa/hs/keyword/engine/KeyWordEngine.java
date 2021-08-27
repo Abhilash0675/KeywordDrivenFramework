@@ -3,6 +3,7 @@ package com.qa.hs.keyword.engine;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Properties;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -14,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.hs.keyword.base.Base;
@@ -125,9 +127,16 @@ public class KeyWordEngine {
 					break;
 				case "wait":
 					//System.out.println("++++++++++++++++++++++++++++++++++++++++++");
-					Thread.sleep(20000);
+					Thread.sleep(30000);
 					//System.out.println("===========================================");
 					break;
+				case "tab":
+					ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+					driver.switchTo().window(tabs.get(1));
+					System.out.println("switched to second tab======================");
+					Thread.sleep(1000);
+					break;
+					
 				case "id":
 					element = driver.findElement(By.id(locatorValue));
 					if (action.equalsIgnoreCase("sendkeys")) {
@@ -186,6 +195,11 @@ public class KeyWordEngine {
 						element.click();
 						Thread.sleep(2000);
 						driver.findElement(By.xpath(value)).click();
+						Thread.sleep(2000);
+
+					}else if (action.equalsIgnoreCase("select")) {
+						Select dropdodropwn = new Select(element);
+						dropdodropwn.deselectByVisibleText(value);
 						Thread.sleep(2000);
 
 					}

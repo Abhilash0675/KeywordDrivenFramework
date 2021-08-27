@@ -2,16 +2,13 @@ package com.qa.hs.tests;
 
 import org.testng.annotations.Test;
 
-public class LeadsModuleTest extends LoginTest{
-	
+public class LeadsModuleEditFormTest extends LoginTest {
 
-	
 	@Test (priority = 1)
 	public void leadsTest() throws InterruptedException{
-		keyWordEngine.startExecution("create_contact_form");
+		keyWordEngine.startExecution("edit_form");
 		Thread.sleep(2000);
 		//done
 	}
 	
-
 }

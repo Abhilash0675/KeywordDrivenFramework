@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TestSuite1]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="LeadsPageTests(failed)">
+  <test thread-count="5" name="LeadsPageEditFormTest(failed)">
     <classes>
-      <class name="com.qa.hs.tests.LeadsTest">
+      <class name="com.qa.hs.tests.LeadsModuleEditFormTest">
         <methods>
           <include name="end"/>
+          <include name="leadsTest"/>
           <include name="quit"/>
           <include name="start"/>
-          <include name="leadsTest"/>
         </methods>
-      </class> <!-- com.qa.hs.tests.LeadsTest -->
+      </class> <!-- com.qa.hs.tests.LeadsModuleEditFormTest -->
     </classes>
-  </test> <!-- LeadsPageTests(failed) -->
+  </test> <!-- LeadsPageEditFormTest(failed) -->
 </suite> <!-- Failed suite [TestSuite1] -->
