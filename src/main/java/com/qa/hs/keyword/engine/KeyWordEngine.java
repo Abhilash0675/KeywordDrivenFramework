@@ -19,19 +19,20 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.hs.keyword.base.Base;
+import com.qa.hs.tests.LoginTest;
 
 /**
  * 
  * AUTHOR : ABHILASH 
  *
  */
-public class KeyWordEngine {
+public class KeyWordEngine extends LoginTest {
 	
-	public KeyWordEngine(WebDriver driver){
-		this.driver=driver;
-	}
+//	public KeyWordEngine(WebDriver driver){
+//		this.driver=driver;
+//	}
 
-	public WebDriver driver;
+	//public WebDriver driver;
 	public Properties prop;
 
 	public static Workbook book;

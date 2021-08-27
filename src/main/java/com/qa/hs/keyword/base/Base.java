@@ -1,10 +1,14 @@
 package com.qa.hs.keyword.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -52,6 +56,21 @@ public class Base {
 		}
 		return prop;
 	}
+	
+//	public String getScreenShotPath(String methodName, WebDriver dr) {
+//		TakesScreenshot ts = (TakesScreenshot)dr;
+//		File source = ts.getScreenshotAs(OutputType.FILE);
+//		String destination = System.getenv("user.dir")+"/reports/"+methodName+".png";
+//		try {
+//			FileUtils.copyFile(source, new File(destination));
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		System.out.println("=============== screenshot path  ================"+destination);
+//
+//		return destination;
+//	}
 	
 	
 	
