@@ -37,13 +37,10 @@ public class Listener extends LoginTest implements ITestListener{
 		extentTest.get().fail(result.getThrowable());
 		// TODO Auto-generated method stub
 		try {
-			System.out.println("=============== ENTERED INTO ONTEST FAILURE ================");
 			String methodName = result.getMethod().getMethodName();
-			System.out.println("=============== PARMS SENT  ================" +methodName);
 			//WebDriver dr = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 			//System.out.println("=============== PARMS SENT  ================" +methodName+ "==="+driver);
 			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(methodName),result.getMethod().getMethodName());
-			System.out.println("=============== Screen shot added ================");
 			
 		} catch (IllegalArgumentException | SecurityException e) {
 			// TODO Auto-generated catch block

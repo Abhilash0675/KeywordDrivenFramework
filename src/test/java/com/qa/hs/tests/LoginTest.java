@@ -77,7 +77,6 @@ public class LoginTest {
 	}
 	
 	public String getScreenShotPath(String methodName) {
-		System.out.println("=============== DRIVER =============="+driver);
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		String destination = System.getProperty("user.dir")+"/reports/"+methodName+".png";
@@ -87,7 +86,6 @@ public class LoginTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("=============== screenshot path  ================"+destination);
 
 		return destination;
 	}
