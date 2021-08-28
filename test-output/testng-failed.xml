@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="com.qa.hs.keyword.listeners.Listener"/>
   </listeners>
-  <test thread-count="5" name="LeadsPageEditFormTest(failed)">
+  <test thread-count="5" name="LoginPageTest(failed)">
     <classes>
-      <class name="com.qa.hs.tests.LeadsModuleEditFormTest">
+      <class name="com.qa.hs.tests.LoginTest">
         <methods>
           <include name="end"/>
-          <include name="leadsTest"/>
+          <include name="loginTest"/>
           <include name="quit"/>
           <include name="start"/>
         </methods>
-      </class> <!-- com.qa.hs.tests.LeadsModuleEditFormTest -->
+      </class> <!-- com.qa.hs.tests.LoginTest -->
     </classes>
-  </test> <!-- LeadsPageEditFormTest(failed) -->
+  </test> <!-- LoginPageTest(failed) -->
 </suite> <!-- Failed suite [TestSuite1] -->

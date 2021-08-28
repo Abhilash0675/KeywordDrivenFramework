@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="com.qa.hs.tests.LeadsModuleCreateContactTest">
+        <methods>
+          <include name="end"/>
+          <include name="leadsTest"/>
+          <include name="quit"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.qa.hs.tests.LeadsModuleCreateContactTest -->
+      <class name="com.qa.hs.tests.LeadsModuleEditFormTest">
+        <methods>
+          <include name="end"/>
+          <include name="leadsTest"/>
+          <include name="loginTest"/>
+          <include name="quit"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.qa.hs.tests.LeadsModuleEditFormTest -->
+      <class name="com.qa.hs.tests.LoginTest">
+        <methods>
+          <include name="end"/>
+          <include name="loginTest"/>
+          <include name="quit"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.qa.hs.tests.LoginTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
