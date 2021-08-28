@@ -5,6 +5,9 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
@@ -41,6 +44,12 @@ public class LoginTest {
 		log = LogManager.getLogger(LoginTest.class.getName());
 		driver = base.init_driver(prop.getProperty("browser"));
 		log.debug("driver initiated");
+		try {
+			FileUtils.cleanDirectory(new File(System.getProperty("user.dir")+"/reports/"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 //		System.out.println("===DRIVER in BEFORE TEST ===="+driver);
 //		String path = System.getProperty("user.dir")+"/reports/index.html";
 //		ExtentSparkReporter reporter = new ExtentSparkReporter(path);

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-28T08:14:05Z" name="TestSuite1" finished-at="2021-08-28T08:14:34Z" duration-ms="29278">
+  <suite started-at="2021-08-28T08:41:39Z" name="TestSuite1" finished-at="2021-08-28T08:42:55Z" duration-ms="75649">
     <groups>
     </groups>
-    <test started-at="2021-08-28T08:14:05Z" name="LoginPageTest" finished-at="2021-08-28T08:14:34Z" duration-ms="29278">
+    <test started-at="2021-08-28T08:41:39Z" name="LoginPageTest" finished-at="2021-08-28T08:42:55Z" duration-ms="75649">
       <class name="com.qa.hs.tests.LoginTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.hs.tests.LoginTest@115667d]" started-at="2021-08-28T08:14:05Z" name="start" finished-at="2021-08-28T08:14:09Z" duration-ms="4911" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.hs.tests.LoginTest@115667d]" started-at="2021-08-28T08:41:39Z" name="start" finished-at="2021-08-28T08:41:59Z" duration-ms="19465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LoginTest@115667d]" started-at="2021-08-28T08:14:09Z" name="loginTest" finished-at="2021-08-28T08:14:33Z" duration-ms="23543" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LoginTest@115667d]" started-at="2021-08-28T08:41:59Z" name="loginTest" finished-at="2021-08-28T08:42:54Z" duration-ms="54323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.qa.hs.tests.LoginTest@115667d]" started-at="2021-08-28T08:14:33Z" name="end" finished-at="2021-08-28T08:14:34Z" duration-ms="784" status="PASS">
+        <test-method is-config="true" signature="end()[pri:0, instance:com.qa.hs.tests.LoginTest@115667d]" started-at="2021-08-28T08:42:54Z" name="end" finished-at="2021-08-28T08:42:55Z" duration-ms="1260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.LoginTest@115667d]" started-at="2021-08-28T08:14:34Z" name="quit" finished-at="2021-08-28T08:14:34Z" duration-ms="67" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.LoginTest@115667d]" started-at="2021-08-28T08:42:56Z" name="quit" finished-at="2021-08-28T08:42:56Z" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
