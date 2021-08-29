@@ -39,43 +39,34 @@ public class LoginTest {
 	
 	@BeforeTest
 	public void start() {
-		base = new Base();
-		prop = base.init_properties();
-		log = LogManager.getLogger(LoginTest.class.getName());
-		driver = base.init_driver(prop.getProperty("browser"));
-		log.debug("driver initiated");
 		try {
 			FileUtils.cleanDirectory(new File(System.getProperty("user.dir")+"/reports/"));
+			FileUtils.cleanDirectory(new File(System.getProperty("user.dir")+"/logs/"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-//		System.out.println("===DRIVER in BEFORE TEST ===="+driver);
-//		String path = System.getProperty("user.dir")+"/reports/index.html";
-//		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-//		reporter.config().setReportName("Avesdo Automation Report");
-//		reporter.config().setDocumentTitle("Test Results");
-//		report = new ExtentReports();
-//		report.attachReporter(reporter);
+		base = new Base();
+		prop = base.init_properties();
+		log = LogManager.getLogger(LoginTest.class.getName());
+		driver = base.init_driver(prop.getProperty("browser"));
+		log.info("driver initiated");
+		
 		driver.manage().deleteAllCookies();
 		log.info("cookies deleted");
 		driver.manage().window().maximize();
-		log.error("window maximized");
+		log.info("window maximized");
 		driver.manage().timeouts().pageLoadTimeout(300, TimeUnit.SECONDS);
 		driver.manage().timeouts().setScriptTimeout(300, TimeUnit.SECONDS);
-		log.fatal("initialization completed");
+		log.info("initialization completed");
 		
 	}
 	
 	@Test (priority = 0)
 	public void loginTest() throws InterruptedException{
-		//report.createTest("LogIn Test");
 		keyWordEngine = new KeyWordEngine();
 		keyWordEngine.startExecution("login");
 		Thread.sleep(2000);
-		//report.flush();
-		//done
-
 	}
 	
 

@@ -23,6 +23,7 @@ public class Listener extends LoginTest implements ITestListener{
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		test = report.createTest(result.getMethod().getMethodName());
+		log.info("TEST STARTED : "+result.getMethod().getMethodName());
 		extentTest.set(test);
 	}
 
@@ -30,6 +31,8 @@ public class Listener extends LoginTest implements ITestListener{
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		extentTest.get().log(Status.PASS,"Test Passed");
+		log.info("TEST PASSED : "+result.getMethod().getMethodName());
+
 	}
 
 	@Override
@@ -38,6 +41,7 @@ public class Listener extends LoginTest implements ITestListener{
 		// TODO Auto-generated method stub
 		try {
 			String methodName = result.getMethod().getMethodName();
+			log.error("TEST FAILED : "+methodName);
 			//WebDriver dr = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 			//System.out.println("=============== PARMS SENT  ================" +methodName+ "==="+driver);
 			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(methodName),result.getMethod().getMethodName());
@@ -73,7 +77,9 @@ public class Listener extends LoginTest implements ITestListener{
 	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
+		log.info("TEST FINISHED");
 		report.flush();
+
 
 	} 
 

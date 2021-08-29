@@ -74,6 +74,7 @@ public class KeyWordEngine extends LoginTest {
 			//try {
 			//System.out.println("ITERATION ------------- i: "+i);
 			//System.out.println("TOTAL ROWS ---- : "+sheet.getLastRowNum());
+				String testStep = sheet.getRow(i+1).getCell(k).toString().trim();
 				String locatorType = sheet.getRow(i + 1).getCell(k + 1).toString().trim();
 				String locatorValue = sheet.getRow(i + 1).getCell(k + 2).toString().trim();
 				String action = sheet.getRow(i + 1).getCell(k + 3).toString().trim();
@@ -83,17 +84,6 @@ public class KeyWordEngine extends LoginTest {
 
 
 				switch (action) {
-//				case "open browser":
-//					//base = new Base();
-//					//prop = base.init_properties();
-//					if (value.isEmpty() || value.equals("NA")) {
-//						driver = base.init_driver(prop.getProperty("browser"));
-//					} else {
-//						driver = base.init_driver(value);
-//						//driver.get("https://amazon.in");
-//
-//					}
-//					break;
 
 				case "enter url":
 //					System.out.println(" *********** entered got url ************* : "+value);
@@ -101,9 +91,11 @@ public class KeyWordEngine extends LoginTest {
 //					System.out.println(" *********** exit got url ************* : "+value);
 					if (value.isEmpty() || value.equals("NA")) {
 						driver.get(prop.getProperty("url"));
+						log.info("Action Performed : "+testStep);
 						//System.out.println(" *********** got url ************* : "+value);
 					} else {
 						driver.get(value);
+						log.info("Action Performed : "+testStep);
 						//System.out.println(" *********** got url ************* : "+value);
 						//Thread.sleep(2000);
 					}
@@ -143,12 +135,16 @@ public class KeyWordEngine extends LoginTest {
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
+						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("click")) {
 						element.click();
+						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
+						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
+						log.info("Action Performed : "+testStep);
 					//	System.out.println("text from element : " + elementText);
 					}
 					locatorType = null;
@@ -178,6 +174,7 @@ public class KeyWordEngine extends LoginTest {
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
+						log.info("Action Performed : "+testStep);
 						Thread.sleep(1000);
 					} else if (action.equalsIgnoreCase("click")) {
 						//wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -186,22 +183,26 @@ public class KeyWordEngine extends LoginTest {
 //							wait.until(ExpectedConditions.visibilityOf(element));
 //						}
 						element.click();
+						log.info("Action Performed : "+testStep);
 						Thread.sleep(5000);
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
+						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
-						System.out.println("text from element : " + elementText);
+						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("mat select")) {
 						element.click();
 						Thread.sleep(2000);
 						driver.findElement(By.xpath(value)).click();
 						Thread.sleep(2000);
+						log.info("Action Performed : "+testStep);
 
 					}else if (action.equalsIgnoreCase("select")) {
 						Select dropdodropwn = new Select(element);
 						dropdodropwn.deselectByVisibleText(value);
 						Thread.sleep(2000);
+						log.info("Action Performed : "+testStep);
 
 					}
 					

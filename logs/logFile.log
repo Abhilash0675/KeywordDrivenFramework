@@ -1,0 +1,11 @@
+11:38:09.124 [main] INFO  com.qa.hs.tests.LoginTest - driver initiated
+11:38:10.090 [main] INFO  com.qa.hs.tests.LoginTest - cookies deleted
+11:38:10.214 [main] INFO  com.qa.hs.tests.LoginTest - window maximized
+11:38:10.227 [main] INFO  com.qa.hs.tests.LoginTest - initialization completed
+11:38:10.249 [main] INFO  com.qa.hs.tests.LoginTest - TEST STARTED : loginTest
+11:38:13.567 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : launch url
+11:38:13.766 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter email
+11:38:13.899 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter password
+11:38:24.937 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click log in
+11:38:31.956 [main] INFO  com.qa.hs.tests.LoginTest - TEST PASSED : loginTest
+11:38:32.576 [main] INFO  com.qa.hs.tests.LoginTest - TEST FINISHED
