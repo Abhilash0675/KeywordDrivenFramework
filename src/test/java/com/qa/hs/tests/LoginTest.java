@@ -1,6 +1,4 @@
 package com.qa.hs.tests;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 //import com.qa.hs.keyword.base.*;
 
 import java.io.File;
@@ -11,8 +9,6 @@ import java.nio.file.Path;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -34,8 +30,6 @@ public class LoginTest {
 	public Base base;
 	public Properties prop;
 	public static WebDriver driver;
-	public static Logger log;
-	public ExtentReports report;
 
 	@BeforeSuite
 	public void first() {
@@ -47,16 +41,11 @@ public class LoginTest {
 		
 		base = new Base();
 		prop = base.init_properties();
-		log = LogManager.getLogger(LoginTest.class.getName());
 		driver = base.init_driver(prop.getProperty("browser"));
-		log.info("driver initiated");
 		
 		driver.manage().deleteAllCookies();
-		log.info("cookies deleted");
 		driver.manage().window().maximize();
-		log.info("window maximized");
 		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-		log.info("initialization completed");
 		
 	}
 	

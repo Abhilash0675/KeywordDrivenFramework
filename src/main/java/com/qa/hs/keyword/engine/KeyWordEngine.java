@@ -91,11 +91,9 @@ public class KeyWordEngine extends LoginTest {
 //					System.out.println(" *********** exit got url ************* : "+value);
 					if (value.isEmpty() || value.equals("NA")) {
 						driver.get(prop.getProperty("url"));
-						log.info("Action Performed : "+testStep);
 						//System.out.println(" *********** got url ************* : "+value);
 					} else {
 						driver.get(value);
-						log.info("Action Performed : "+testStep);
 						//System.out.println(" *********** got url ************* : "+value);
 						//Thread.sleep(2000);
 					}
@@ -140,16 +138,12 @@ public class KeyWordEngine extends LoginTest {
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
-						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("click")) {
 						element.click();
-						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
-						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
-						log.info("Action Performed : "+testStep);
 					//	System.out.println("text from element : " + elementText);
 					}
 					locatorType = null;
@@ -177,31 +171,25 @@ public class KeyWordEngine extends LoginTest {
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
-						log.info("Action Performed : "+testStep);
 						//Thread.sleep(1000);
 					} else if (action.equalsIgnoreCase("click")) {
 						element.click();
-						log.info("Action Performed : "+testStep);
 						//Thread.sleep(5000);
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
-						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
-						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("mat select")) {
 						element.click();
 						//Thread.sleep(2000);
 						wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(value)));
 						driver.findElement(By.xpath(value)).click();
 						//Thread.sleep(2000);
-						log.info("Action Performed : "+testStep);
 
 					}else if (action.equalsIgnoreCase("select")) {
 						Select dropdodropwn = new Select(element);
 						dropdodropwn.deselectByVisibleText(value);
 						Thread.sleep(1000);
-						log.info("Action Performed : "+testStep);
 
 					}
 					
