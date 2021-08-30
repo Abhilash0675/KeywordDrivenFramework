@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-30T07:35:09Z" name="TestSuite1" finished-at="2021-08-30T07:36:31Z" duration-ms="82135">
+  <suite started-at="2021-08-30T07:56:07Z" name="TestSuite1" finished-at="2021-08-30T07:57:12Z" duration-ms="64966">
     <groups>
     </groups>
-    <test started-at="2021-08-30T07:35:09Z" name="LeadsPageCreateContactTest" finished-at="2021-08-30T07:36:31Z" duration-ms="82135">
+    <test started-at="2021-08-30T07:56:07Z" name="LeadsPageCreateContactTest" finished-at="2021-08-30T07:57:12Z" duration-ms="64966">
       <class name="com.qa.hs.tests.LeadsModuleCreateContactTest">
-        <test-method is-config="true" signature="first()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:35:08Z" name="first" finished-at="2021-08-30T07:35:09Z" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="first()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:56:07Z" name="first" finished-at="2021-08-30T07:56:07Z" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- first -->
-        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:35:09Z" name="start" finished-at="2021-08-30T07:35:12Z" duration-ms="3586" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:56:07Z" name="start" finished-at="2021-08-30T07:56:11Z" duration-ms="3455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:35:12Z" name="loginTest" finished-at="2021-08-30T07:35:47Z" duration-ms="34514" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:56:11Z" name="loginTest" finished-at="2021-08-30T07:56:25Z" duration-ms="13974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="leadsTest()[pri:1, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:35:47Z" name="leadsTest" finished-at="2021-08-30T07:36:30Z" duration-ms="43278" status="PASS">
+        <test-method signature="leadsTest()[pri:1, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:56:25Z" name="leadsTest" finished-at="2021-08-30T07:57:11Z" duration-ms="46379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- leadsTest -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:36:30Z" name="end" finished-at="2021-08-30T07:36:31Z" duration-ms="695" status="PASS">
+        <test-method is-config="true" signature="end()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:57:11Z" name="end" finished-at="2021-08-30T07:57:12Z" duration-ms="1095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:36:31Z" name="quit" finished-at="2021-08-30T07:36:31Z" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@63f8276e]" started-at="2021-08-30T07:57:13Z" name="quit" finished-at="2021-08-30T07:57:13Z" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

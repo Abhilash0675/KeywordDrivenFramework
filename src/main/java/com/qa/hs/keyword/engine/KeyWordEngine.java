@@ -116,13 +116,16 @@ public class KeyWordEngine extends LoginTest {
 					Actions actions = new Actions(driver);
 					actions.moveToElement(driver.findElement(By.xpath(locatorValue)));
 					actions.perform();
-					Thread.sleep(5000);
+					//Thread.sleep(5000);
 					break;
 				case "wait":
 					//System.out.println("++++++++++++++++++++++++++++++++++++++++++");
 //					Thread.sleep(Integer.parseInt(value));
-					Thread.sleep((value.length())*5000);
-					System.out.println("=========================waited for=================="+(value.length())*5000);
+					//Thread.sleep((value.length())*5000);
+					float num = Float.parseFloat(value);
+					int waitingTime = (int) num;
+					Thread.sleep(waitingTime);
+					System.out.println("=========================waited for=================="+waitingTime);
 					break;
 				case "tab":
 					ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());

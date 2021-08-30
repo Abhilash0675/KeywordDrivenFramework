@@ -62,8 +62,6 @@ public class LoginTest {
 		driver.manage().window().maximize();
 		log.info("window maximized");
 		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-//		driver.manage().timeouts().pageLoadTimeout(300, TimeUnit.SECONDS);
-//		driver.manage().timeouts().setScriptTimeout(300, TimeUnit.SECONDS);
 		log.info("initialization completed");
 		
 	}
