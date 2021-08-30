@@ -69,24 +69,6 @@ public class LoginTest {
 	public void quit() {
 		driver.quit();
 	}
-	
-	public String getScreenShotPath(String methodName) {
-		TakesScreenshot ts = (TakesScreenshot)driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir")+"/reports/"+methodName+".png";
-		try {
-			FileUtils.copyFile(source, new File(destination));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 
-		return destination;
-	}
-
-
-	
-	
-	
 
 }
