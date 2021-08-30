@@ -18,6 +18,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.qa.hs.keyword.base.Base;
@@ -36,9 +37,8 @@ public class LoginTest {
 	public static Logger log;
 	public ExtentReports report;
 
-	
-	@BeforeTest
-	public void start() {
+	@BeforeSuite
+	public void first() {
 		try {
 			FileUtils.cleanDirectory(new File(System.getProperty("user.dir")+"/reports/"));
 			FileUtils.cleanDirectory(new File(System.getProperty("user.dir")+"/logs/"));
@@ -46,6 +46,11 @@ public class LoginTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	@BeforeTest
+	public void start() {
+		
 		base = new Base();
 		prop = base.init_properties();
 		log = LogManager.getLogger(LoginTest.class.getName());
@@ -56,8 +61,9 @@ public class LoginTest {
 		log.info("cookies deleted");
 		driver.manage().window().maximize();
 		log.info("window maximized");
-		driver.manage().timeouts().pageLoadTimeout(300, TimeUnit.SECONDS);
-		driver.manage().timeouts().setScriptTimeout(300, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+//		driver.manage().timeouts().pageLoadTimeout(300, TimeUnit.SECONDS);
+//		driver.manage().timeouts().setScriptTimeout(300, TimeUnit.SECONDS);
 		log.info("initialization completed");
 		
 	}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite1]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.hs.keyword.listeners.Listener"/>
+  </listeners>
+  <test thread-count="5" name="SalesModuleAllocatUnitTest(failed)">
+    <classes>
+      <class name="com.qa.hs.tests.SalesModuleAllocatUnitTest">
+        <methods>
+          <include name="end"/>
+          <include name="first"/>
+          <include name="quit"/>
+          <include name="salesModuleAllocatUnitTest"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.qa.hs.tests.SalesModuleAllocatUnitTest -->
+    </classes>
+  </test> <!-- SalesModuleAllocatUnitTest(failed) -->
+</suite> <!-- Failed suite [TestSuite1] -->

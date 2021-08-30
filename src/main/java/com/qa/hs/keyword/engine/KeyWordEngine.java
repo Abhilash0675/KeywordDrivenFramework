@@ -32,7 +32,7 @@ public class KeyWordEngine extends LoginTest {
 //		this.driver=driver;
 //	}
 
-	//public WebDriver driver;
+	public WebDriverWait wait = new WebDriverWait(driver,60);
 	public Properties prop;
 
 	public static Workbook book;
@@ -120,8 +120,9 @@ public class KeyWordEngine extends LoginTest {
 					break;
 				case "wait":
 					//System.out.println("++++++++++++++++++++++++++++++++++++++++++");
-					Thread.sleep(30000);
-					//System.out.println("===========================================");
+//					Thread.sleep(Integer.parseInt(value));
+					Thread.sleep((value.length())*5000);
+					System.out.println("=========================waited for=================="+(value.length())*5000);
 					break;
 				case "tab":
 					ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
@@ -131,6 +132,7 @@ public class KeyWordEngine extends LoginTest {
 					break;
 					
 				case "id":
+					wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id(locatorValue))));
 					element = driver.findElement(By.id(locatorValue));
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
@@ -167,24 +169,17 @@ public class KeyWordEngine extends LoginTest {
 					break;
 
 				case "xpath":
-//					wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(locatorValue))));
-//					System.out.println(" WAITED TILL ELEMENT FOUND");
+					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locatorValue)));
 					element = driver.findElement(By.xpath(locatorValue));
-					//System.out.println("ELEMENT FOUND  ---"+element);
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
 						log.info("Action Performed : "+testStep);
-						Thread.sleep(1000);
+						//Thread.sleep(1000);
 					} else if (action.equalsIgnoreCase("click")) {
-						//wait.until(ExpectedConditions.elementToBeClickable(element));
-//						if(value.equals("wait")) {
-//							System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-//							wait.until(ExpectedConditions.visibilityOf(element));
-//						}
 						element.click();
 						log.info("Action Performed : "+testStep);
-						Thread.sleep(5000);
+						//Thread.sleep(5000);
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
 						log.info("Action Performed : "+testStep);
@@ -193,15 +188,16 @@ public class KeyWordEngine extends LoginTest {
 						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("mat select")) {
 						element.click();
-						Thread.sleep(2000);
+						//Thread.sleep(2000);
+						wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(value)));
 						driver.findElement(By.xpath(value)).click();
-						Thread.sleep(2000);
+						//Thread.sleep(2000);
 						log.info("Action Performed : "+testStep);
 
 					}else if (action.equalsIgnoreCase("select")) {
 						Select dropdodropwn = new Select(element);
 						dropdodropwn.deselectByVisibleText(value);
-						Thread.sleep(2000);
+						Thread.sleep(1000);
 						log.info("Action Performed : "+testStep);
 
 					}

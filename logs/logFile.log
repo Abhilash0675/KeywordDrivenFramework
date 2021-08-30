@@ -1,11 +1,31 @@
-11:38:09.124 [main] INFO  com.qa.hs.tests.LoginTest - driver initiated
-11:38:10.090 [main] INFO  com.qa.hs.tests.LoginTest - cookies deleted
-11:38:10.214 [main] INFO  com.qa.hs.tests.LoginTest - window maximized
-11:38:10.227 [main] INFO  com.qa.hs.tests.LoginTest - initialization completed
-11:38:10.249 [main] INFO  com.qa.hs.tests.LoginTest - TEST STARTED : loginTest
-11:38:13.567 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : launch url
-11:38:13.766 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter email
-11:38:13.899 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter password
-11:38:24.937 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click log in
-11:38:31.956 [main] INFO  com.qa.hs.tests.LoginTest - TEST PASSED : loginTest
-11:38:32.576 [main] INFO  com.qa.hs.tests.LoginTest - TEST FINISHED
+13:05:11.332 [main] INFO  com.qa.hs.tests.LoginTest - driver initiated
+13:05:12.466 [main] INFO  com.qa.hs.tests.LoginTest - cookies deleted
+13:05:12.593 [main] INFO  com.qa.hs.tests.LoginTest - window maximized
+13:05:12.603 [main] INFO  com.qa.hs.tests.LoginTest - initialization completed
+13:05:12.627 [main] INFO  com.qa.hs.tests.LoginTest - TEST STARTED : loginTest
+13:05:16.914 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : launch url
+13:05:17.307 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter email
+13:05:17.526 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter password
+13:05:45.131 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click log in
+13:05:47.151 [main] INFO  com.qa.hs.tests.LoginTest - TEST PASSED : loginTest
+13:05:47.165 [main] INFO  com.qa.hs.tests.LoginTest - TEST STARTED : leadsTest
+13:05:52.855 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click Skagen Townhouse
+13:05:58.215 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click LEADS
+13:06:15.393 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : get contact page
+13:06:16.183 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter first name
+13:06:16.645 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : select title
+13:06:17.130 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter middle name
+13:06:17.648 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter last name
+13:06:18.100 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter phone number
+13:06:18.431 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter extension
+13:06:18.865 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter email
+13:06:19.425 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter contact preference
+13:06:20.102 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter country
+13:06:25.981 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter state
+13:06:26.555 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter unit
+13:06:27.220 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter street
+13:06:27.781 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter city
+13:06:28.179 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter postal code
+13:06:28.435 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click Save
+13:06:30.449 [main] INFO  com.qa.hs.tests.LoginTest - TEST PASSED : leadsTest
+13:06:31.204 [main] INFO  com.qa.hs.tests.LoginTest - TEST FINISHED
