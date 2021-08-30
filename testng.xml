@@ -8,20 +8,20 @@
     <classes>
       <class name="com.qa.hs.tests.LoginTest"/>
     </classes>
-  </test> -->
+  </test>
   <test thread-count="5" name="LeadsPageCreateContactTest">
     <classes>
       <class name="com.qa.hs.tests.LeadsModuleCreateContactTest"/>
     </classes>
   </test>  
- <!-- <test thread-count="5" name="LeadsPageEditFormTest">
+  <test thread-count="5" name="LeadsPageEditFormTest">
     <classes>
       <class name="com.qa.hs.tests.LeadsModuleEditFormTest"/>
     </classes>
-  </test>  
+  </test>  -->
   <test thread-count="5" name="SalesModuleAllocatUnitTest">
     <classes>
       <class name="com.qa.hs.tests.SalesModuleAllocatUnitTest"/>
     </classes>
-  </test>  -->
+  </test>  
 </suite> <!-- Suite -->
