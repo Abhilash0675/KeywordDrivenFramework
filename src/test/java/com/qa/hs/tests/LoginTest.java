@@ -39,13 +39,7 @@ public class LoginTest {
 
 	@BeforeSuite
 	public void first() {
-		try {
-			FileUtils.cleanDirectory(new File(System.getProperty("user.dir")+"/reports/"));
-			FileUtils.cleanDirectory(new File(System.getProperty("user.dir")+"/logs/"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 	}
 	
 	@BeforeTest
