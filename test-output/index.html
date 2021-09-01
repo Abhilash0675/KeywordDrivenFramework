@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                    <span class="method-stats">7 methods, 3 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-TestSuite1" class="show-methods failed suite-TestSuite1"> (show)</a> <!-- show-methods failed suite-TestSuite1 -->
                     </span>
                     <div class="method-list-content failed suite-TestSuite1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LeadsModuleCreateContactTest" class="method navigator-link" hash-for-method="leadsTest">leadsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LeadsModuleEditFormTest" class="method navigator-link" hash-for-method="leadsTest">leadsTest</a> <!-- method navigator-link -->
@@ -119,11 +124,6 @@
                       <a href="#" panel-name="suite-TestSuite1" class="show-methods passed suite-TestSuite1"> (show)</a> <!-- show-methods passed suite-TestSuite1 -->
                     </span>
                     <div class="method-list-content passed suite-TestSuite1">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LeadsModuleCreateContactTest" class="method navigator-link" hash-for-method="leadsTest">leadsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
@@ -159,28 +159,28 @@
           <div class="suite-TestSuite1-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qa.hs.tests.SalesModuleAllocatUnitTest</span>
+              <span class="class-name">com.qa.hs.tests.LeadsModuleEditFormTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="salesModuleAllocatUnitTest">
-                  </a> <!-- salesModuleAllocatUnitTest -->
-                  <span class="method-name">salesModuleAllocatUnitTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@data-placeholder=&apos;Select a Realtor&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+                  <a name="leadsTest">
+                  </a> <!-- leadsTest -->
+                  <span class="method-name">leadsTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@class=&quot;img-responsive ng-scope ng-isolate-scope&quot;] (tried for 60 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.hs.keyword.engine.KeyWordEngine.startExecution(KeyWordEngine.java:169)
-	at com.qa.hs.tests.SalesModuleAllocatUnitTest.salesModuleAllocatUnitTest(SalesModuleAllocatUnitTest.java:12)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@data-placeholder=&apos;Select a Realtor&apos;]&quot;}
+	at com.qa.hs.keyword.engine.KeyWordEngine.startExecution(KeyWordEngine.java:173)
+	at com.qa.hs.tests.LeadsModuleEditFormTest.leadsTest(LeadsModuleEditFormTest.java:12)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@class=&quot;img-responsive ng-scope ng-isolate-scope&quot;]&quot;}
   (Session info: chrome=91.0.4472.77)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Unknown&apos;, ip: &apos;Unknown&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.6.4-040604-generic&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.fWtqL7}, goog:chromeOptions: {debuggerAddress: localhost:37043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 41b094f47de34c4280d6a506c53e5d00
-*** Element info: {Using=xpath, value=//input[@data-placeholder=&apos;Select a Realtor&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.MkjimU}, goog:chromeOptions: {debuggerAddress: localhost:35051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05d77f516b93b7d1f8483cf5b84f51b6
+*** Element info: {Using=xpath, value=//img[@class=&quot;img-responsive ng-scope ng-isolate-scope&quot;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -204,28 +204,28 @@ Session ID: 41b094f47de34c4280d6a506c53e5d00
           <div class="suite-TestSuite1-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qa.hs.tests.LeadsModuleEditFormTest</span>
+              <span class="class-name">com.qa.hs.tests.SalesModuleAllocatUnitTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="leadsTest">
-                  </a> <!-- leadsTest -->
-                  <span class="method-name">leadsTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[normalize-space()=&apos;Preview your form here&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+                  <a name="salesModuleAllocatUnitTest">
+                  </a> <!-- salesModuleAllocatUnitTest -->
+                  <span class="method-name">salesModuleAllocatUnitTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[normalize-space()=&apos;Sales Grid&apos;] (tried for 60 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.hs.keyword.engine.KeyWordEngine.startExecution(KeyWordEngine.java:169)
-	at com.qa.hs.tests.LeadsModuleEditFormTest.leadsTest(LeadsModuleEditFormTest.java:12)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[normalize-space()=&apos;Preview your form here&apos;]&quot;}
+	at com.qa.hs.keyword.engine.KeyWordEngine.startExecution(KeyWordEngine.java:173)
+	at com.qa.hs.tests.SalesModuleAllocatUnitTest.salesModuleAllocatUnitTest(SalesModuleAllocatUnitTest.java:12)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Sales Grid&apos;]&quot;}
   (Session info: chrome=91.0.4472.77)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Unknown&apos;, ip: &apos;Unknown&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.6.4-040604-generic&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.5fMvLn}, goog:chromeOptions: {debuggerAddress: localhost:37759}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ae9e3dea7b28319ecfd96343849bd0b
-*** Element info: {Using=xpath, value=//div[normalize-space()=&apos;Preview your form here&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.yRs9de}, goog:chromeOptions: {debuggerAddress: localhost:38783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c3204eb2a5668dab010e24583effbc17
+*** Element info: {Using=xpath, value=//button[normalize-space()=&apos;Sales Grid&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -246,9 +246,9 @@ Session ID: 4ae9e3dea7b28319ecfd96343849bd0b
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-TestSuite1-class-failed -->
-          <div class="suite-TestSuite1-class-passed">
+          <div class="suite-TestSuite1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.qa.hs.tests.LeadsModuleCreateContactTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -257,10 +257,40 @@ Session ID: 4ae9e3dea7b28319ecfd96343849bd0b
                   <a name="leadsTest">
                   </a> <!-- leadsTest -->
                   <span class="method-name">leadsTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[@class=&apos;mat-focus-indicator contacts-list__buttons__create_contact mat-stroked-button mat-button-base mat-primary&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hs.keyword.engine.KeyWordEngine.startExecution(KeyWordEngine.java:173)
+	at com.qa.hs.tests.LeadsModuleCreateContactTest.leadsTest(LeadsModuleCreateContactTest.java:12)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;mat-focus-indicator contacts-list__buttons__create_contact mat-stroked-button mat-button-base mat-primary&apos;]&quot;}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Unknown&apos;, ip: &apos;Unknown&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.6.4-040604-generic&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.GrWhUp}, goog:chromeOptions: {debuggerAddress: localhost:36463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c31df6c696a2545add7d427b9fa9a7ff
+*** Element info: {Using=xpath, value=//button[@class=&apos;mat-focus-indicator contacts-list__buttons__create_contact mat-stroked-button mat-button-base mat-primary&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite1-class-passed -->
+          </div> <!-- suite-TestSuite1-class-failed -->
           <div class="suite-TestSuite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -307,6 +337,9 @@ Session ID: 4ae9e3dea7b28319ecfd96343849bd0b
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestSuite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.hs.keyword.listeners.Listener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;LoginPageTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.hs.tests.LoginTest&quot;/&gt;
@@ -379,37 +412,37 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'leadsTest')
-data.setCell(0, 2, 'com.qa.hs.tests.LeadsModuleEditFormTest')
-data.setCell(0, 3, 105885);
+data.setCell(0, 2, 'com.qa.hs.tests.LeadsModuleCreateContactTest')
+data.setCell(0, 3, 173103);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'salesModuleAllocatUnitTest')
 data.setCell(1, 2, 'com.qa.hs.tests.SalesModuleAllocatUnitTest')
-data.setCell(1, 3, 83066);
+data.setCell(1, 3, 135081);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'leadsTest')
-data.setCell(2, 2, 'com.qa.hs.tests.LeadsModuleCreateContactTest')
-data.setCell(2, 3, 38175);
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.qa.hs.tests.LoginTest')
+data.setCell(2, 3, 86239);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginTest')
 data.setCell(3, 2, 'com.qa.hs.tests.LoginTest')
-data.setCell(3, 3, 20311);
+data.setCell(3, 3, 82825);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginTest')
 data.setCell(4, 2, 'com.qa.hs.tests.LoginTest')
-data.setCell(4, 3, 18403);
+data.setCell(4, 3, 73317);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loginTest')
 data.setCell(5, 2, 'com.qa.hs.tests.LoginTest')
-data.setCell(5, 3, 15019);
+data.setCell(5, 3, 64669);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginTest')
-data.setCell(6, 2, 'com.qa.hs.tests.LoginTest')
-data.setCell(6, 3, 14687);
+data.setCell(6, 1, 'leadsTest')
+data.setCell(6, 2, 'com.qa.hs.tests.LeadsModuleEditFormTest')
+data.setCell(6, 3, 60573);
 window.suiteTableData['TestSuite1']= { tableData: data, tableDiv: 'times-div-TestSuite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
               <div id="times-div-TestSuite1">
               </div> <!-- times-div-TestSuite1 -->
             </div> <!-- times-div -->
@@ -427,6 +460,19 @@ return data;
             <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.hs.tests.LeadsModuleEditFormTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">start</span>
+                <br/>
+                <span class="ignored-method-name">first</span>
+                <br/>
+                <span class="ignored-method-name">end</span>
+                <br/>
+                <span class="ignored-method-name">quit</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.qa.hs.tests.SalesModuleAllocatUnitTest</span>
               <div class="ignored-methods-div">
@@ -453,19 +499,6 @@ return data;
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.hs.tests.LeadsModuleEditFormTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">start</span>
-                <br/>
-                <span class="ignored-method-name">first</span>
-                <br/>
-                <span class="ignored-method-name">end</span>
-                <br/>
-                <span class="ignored-method-name">quit</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestSuite1" class="panel">
@@ -481,45 +514,47 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">start</span>
-                <span class="method-start">11 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">49251 ms</span>
+                <span class="method-start">6101 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">end</span>
-                <span class="method-start">69604 ms</span>
+                <span class="method-start">92346 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">start</span>
-                <span class="method-start">73244 ms</span>
+                <span class="method-start">94230 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">78753 ms</span>
+                <span class="method-start">97988 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hs.tests.LeadsModuleCreateContactTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">leadsTest</span>
-                <span class="method-start">93774 ms</span>
+                <span class="method-start">162659 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hs.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">end</span>
-                <span class="method-start">131951 ms</span>
+                <span class="method-start">336082 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">start</span>
-                <span class="method-start">133665 ms</span>
+                <span class="method-start">337486 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">139893 ms</span>
+                <span class="method-start">339441 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -528,22 +563,22 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">leadsTest</span>
-                <span class="method-start">158298 ms</span>
+                <span class="method-start">412759 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hs.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">end</span>
-                <span class="method-start">264223 ms</span>
+                <span class="method-start">473434 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">start</span>
-                <span class="method-start">264726 ms</span>
+                <span class="method-start">473971 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">267180 ms</span>
+                <span class="method-start">475494 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -552,18 +587,18 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">salesModuleAllocatUnitTest</span>
-                <span class="method-start">281868 ms</span>
+                <span class="method-start">558322 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hs.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">end</span>
-                <span class="method-start">364941 ms</span>
+                <span class="method-start">693605 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">quit</span>
-                <span class="method-start">366082 ms</span>
+                <span class="method-start">694742 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

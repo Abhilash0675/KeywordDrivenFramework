@@ -1,0 +1,12 @@
+18:09:12.212 [main] INFO  com.qa.hs.tests.LoginTest - window maximized
+18:09:12.215 [main] INFO  com.qa.hs.tests.LoginTest - initialization completed
+18:09:12.220 [main] INFO  com.qa.hs.tests.LoginTest - TEST STARTED : loginTest
+18:09:20.443 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter email
+18:09:20.635 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter password
+18:10:35.041 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click log in
+18:10:35.044 [main] INFO  com.qa.hs.tests.LoginTest - TEST PASSED : loginTest
+18:10:35.046 [main] INFO  com.qa.hs.tests.LoginTest - TEST STARTED : salesModuleAllocatUnitTest
+18:11:46.731 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click Skagen Townhouse
+18:11:49.848 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click SALES
+18:12:50.138 [main] ERROR com.qa.hs.tests.LoginTest - TEST FAILED : salesModuleAllocatUnitTest
+18:12:50.141 [main] ERROR com.qa.hs.tests.LoginTest - com.aventstack.extentreports.ExtentTest@4dad2363
