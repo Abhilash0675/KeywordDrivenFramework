@@ -2,7 +2,7 @@ package com.qa.hs.tests;
 
 import org.testng.annotations.Test;
 
-public class SalesModuleAllocatUnitTest extends LoginTest{
+public class SalesModuleAllocatUnitTest extends BaseClass{
 	
 	@Test (priority = 1)
 	public void salesModuleAllocatUnitTest() throws InterruptedException{

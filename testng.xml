@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestSuite1">
-  <!--    <test thread-count="5" name="LoginPageTest">
+    <test thread-count="5" name="LoginPageTest">
     <classes>
       <class name="com.qa.hs.tests.LoginTest"/>
     </classes>
-  </test>-->
-  <test thread-count="5" name="LeadsPageCreateContactTest">
+  </test>
+ <!-- <test thread-count="5" name="LeadsPageCreateContactTest">
     <classes>
-      <class name="com.qa.hs.tests.LeadsModuleCreateContactTest"/>
+          <class name="com.qa.hs.tests.LoginTest"/>
+     	  <class name="com.qa.hs.tests.LeadsModuleCreateContactTest"/>
     </classes>
   </test>  
-  <!--<test thread-count="5" name="LeadsPageEditFormTest">
+  <test thread-count="5" name="LeadsPageEditFormTest">
     <classes>
       <class name="com.qa.hs.tests.LeadsModuleEditFormTest"/>
     </classes>

@@ -25,7 +25,11 @@ public class Base {
 	
 	public WebDriver init_driver(String browserName){
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriverPath"));
+			//System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriverPath"));
+			//String path = "./resources/chromedriver";
+			String path = System.getProperty("user.dir")+"/resources/chromedriver";
+			System.out.println("************  "+path+" *******************************");
+			System.setProperty("webdriver.chrome.driver",path);
 			if(prop.getProperty("headless").equals("yes")){
 				//headless mode:
 				ChromeOptions options = new ChromeOptions();

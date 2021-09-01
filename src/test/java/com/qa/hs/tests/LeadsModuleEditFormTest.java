@@ -2,7 +2,7 @@ package com.qa.hs.tests;
 
 import org.testng.annotations.Test;
 
-public class LeadsModuleEditFormTest extends LoginTest {
+public class LeadsModuleEditFormTest extends BaseClass {
 
 	@Test (priority = 1)
 	public void leadsTest() throws InterruptedException{
