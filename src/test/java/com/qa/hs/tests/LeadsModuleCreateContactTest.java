@@ -10,7 +10,6 @@ public class LeadsModuleCreateContactTest extends BaseClass{
 	public void leadsTest() throws InterruptedException{
 		keyWordEngine = new KeyWordEngine();		
 		keyWordEngine.startExecution("create_contact_form");
-		//Thread.sleep(2000);
 	}
 	
 }

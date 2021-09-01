@@ -27,9 +27,13 @@ public class Base {
 		if(browserName.equals("chrome")){
 			//System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriverPath"));
 			//String path = "./resources/chromedriver";
-			String path = System.getProperty("user.dir")+"/resources/chromedriver";
-			System.out.println("************  "+path+" *******************************");
-			System.setProperty("webdriver.chrome.driver",path);
+			//String path = System.getProperty("user.dir")+"/resources/chromedriver";
+			//System.out.println("************"+path+"*******************************");
+			
+			//System.setProperty("webdriver.chrome.driver","/home/naveen/git/AvesdoAutomation/resources/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",prop.getProperty("chromedriverPath"));
+
+			//System.setProperty("webdriver.chrome.driver",prop.getProperty("chromedriverPath"));
 			if(prop.getProperty("headless").equals("yes")){
 				//headless mode:
 				ChromeOptions options = new ChromeOptions();
@@ -49,7 +53,8 @@ public class Base {
 	public Properties init_properties(){
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("/home/naveen/git/AvesdoAutomation/src/main/java/com/qa/hs/keyword/config/config.properties");
+			String extension = "/src/main/java/com/qa/hs/keyword/config/config.properties";
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+extension);
 //			FileInputStream ip = new FileInputStream("C:\\selenium-automation\\KeywordDrivenFramework-master\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
 	
 			prop.load(ip);
