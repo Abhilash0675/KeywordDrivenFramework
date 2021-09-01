@@ -102,12 +102,12 @@
                     <div class="method-list-content passed suite-TestSuite1">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.SalesModuleAllocatUnitTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LeadsModuleCreateContactTest" class="method navigator-link" hash-for-method="leadsTest">leadsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.SalesModuleAllocatUnitTest" class="method navigator-link" hash-for-method="salesModuleAllocatUnitTest">salesModuleAllocatUnitTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LeadsModuleCreateContactTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestSuite1 -->
@@ -125,21 +125,21 @@
           <div class="suite-TestSuite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.hs.tests.SalesModuleAllocatUnitTest</span>
+              <span class="class-name">com.qa.hs.tests.LeadsModuleCreateContactTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="leadsTest">
+                  </a> <!-- leadsTest -->
+                  <span class="method-name">leadsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="salesModuleAllocatUnitTest">
-                  </a> <!-- salesModuleAllocatUnitTest -->
-                  <span class="method-name">salesModuleAllocatUnitTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -154,11 +154,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestSuite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;SalesModuleAllocatUnitTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LeadsPageCreateContactTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.hs.tests.SalesModuleAllocatUnitTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.hs.tests.LeadsModuleCreateContactTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- SalesModuleAllocatUnitTest --&gt;
+  &lt;/test&gt; &lt;!-- LeadsPageCreateContactTest --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,7 +170,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">SalesModuleAllocatUnitTest (1 class)</span>
+                <span class="test-name">LeadsPageCreateContactTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,18 +198,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'salesModuleAllocatUnitTest')
-data.setCell(0, 2, 'com.qa.hs.tests.SalesModuleAllocatUnitTest')
-data.setCell(0, 3, 33597);
+data.setCell(0, 1, 'leadsTest')
+data.setCell(0, 2, 'com.qa.hs.tests.LeadsModuleCreateContactTest')
+data.setCell(0, 3, 68874);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
-data.setCell(1, 2, 'com.qa.hs.tests.SalesModuleAllocatUnitTest')
-data.setCell(1, 3, 21316);
+data.setCell(1, 2, 'com.qa.hs.tests.LeadsModuleCreateContactTest')
+data.setCell(1, 3, 31921);
 window.suiteTableData['TestSuite1']= { tableData: data, tableDiv: 'times-div-TestSuite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 54 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-TestSuite1">
               </div> <!-- times-div-TestSuite1 -->
             </div> <!-- times-div -->
@@ -235,30 +235,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.hs.tests.SalesModuleAllocatUnitTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.hs.tests.LeadsModuleCreateContactTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">first</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">start</span>
-                <span class="method-start">16 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">4594 ms</span>
+                <span class="method-start">2818 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">salesModuleAllocatUnitTest</span>
-                <span class="method-start">25926 ms</span>
+                <span class="method-name">leadsTest</span>
+                <span class="method-start">34756 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">end</span>
-                <span class="method-start">59530 ms</span>
+                <span class="method-start">103634 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">quit</span>
-                <span class="method-start">60376 ms</span>
+                <span class="method-start">105176 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

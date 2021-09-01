@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-30T13:29:47Z" name="TestSuite1" finished-at="2021-08-30T13:30:47Z" duration-ms="60284">
+  <suite started-at="2021-08-30T17:20:17Z" name="TestSuite1" finished-at="2021-08-30T17:22:01Z" duration-ms="104848">
     <groups>
     </groups>
-    <test started-at="2021-08-30T13:29:47Z" name="SalesModuleAllocatUnitTest" finished-at="2021-08-30T13:30:47Z" duration-ms="60284">
-      <class name="com.qa.hs.tests.SalesModuleAllocatUnitTest">
-        <test-method is-config="true" signature="first()[pri:0, instance:com.qa.hs.tests.SalesModuleAllocatUnitTest@1a72a540]" started-at="2021-08-30T13:29:47Z" name="first" finished-at="2021-08-30T13:29:47Z" duration-ms="11" status="PASS">
+    <test started-at="2021-08-30T17:20:17Z" name="LeadsPageCreateContactTest" finished-at="2021-08-30T17:22:01Z" duration-ms="104848">
+      <class name="com.qa.hs.tests.LeadsModuleCreateContactTest">
+        <test-method is-config="true" signature="first()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@4e31276e]" started-at="2021-08-30T17:20:17Z" name="first" finished-at="2021-08-30T17:20:17Z" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- first -->
-        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.hs.tests.SalesModuleAllocatUnitTest@1a72a540]" started-at="2021-08-30T13:29:47Z" name="start" finished-at="2021-08-30T13:29:52Z" duration-ms="4539" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@4e31276e]" started-at="2021-08-30T17:20:17Z" name="start" finished-at="2021-08-30T17:20:19Z" duration-ms="2760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.SalesModuleAllocatUnitTest@1a72a540]" started-at="2021-08-30T13:29:52Z" name="loginTest" finished-at="2021-08-30T13:30:13Z" duration-ms="21316" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@4e31276e]" started-at="2021-08-30T17:20:19Z" name="loginTest" finished-at="2021-08-30T17:20:51Z" duration-ms="31921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="salesModuleAllocatUnitTest()[pri:1, instance:com.qa.hs.tests.SalesModuleAllocatUnitTest@1a72a540]" started-at="2021-08-30T13:30:13Z" name="salesModuleAllocatUnitTest" finished-at="2021-08-30T13:30:47Z" duration-ms="33597" status="PASS">
+        <test-method signature="leadsTest()[pri:1, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@4e31276e]" started-at="2021-08-30T17:20:51Z" name="leadsTest" finished-at="2021-08-30T17:22:00Z" duration-ms="68874" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- salesModuleAllocatUnitTest -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.qa.hs.tests.SalesModuleAllocatUnitTest@1a72a540]" started-at="2021-08-30T13:30:47Z" name="end" finished-at="2021-08-30T13:30:47Z" duration-ms="766" status="PASS">
+        </test-method> <!-- leadsTest -->
+        <test-method is-config="true" signature="end()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@4e31276e]" started-at="2021-08-30T17:22:00Z" name="end" finished-at="2021-08-30T17:22:01Z" duration-ms="1243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.SalesModuleAllocatUnitTest@1a72a540]" started-at="2021-08-30T13:30:47Z" name="quit" finished-at="2021-08-30T13:30:48Z" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.LeadsModuleCreateContactTest@4e31276e]" started-at="2021-08-30T17:22:02Z" name="quit" finished-at="2021-08-30T17:22:02Z" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- com.qa.hs.tests.SalesModuleAllocatUnitTest -->
-    </test> <!-- SalesModuleAllocatUnitTest -->
+      </class> <!-- com.qa.hs.tests.LeadsModuleCreateContactTest -->
+    </test> <!-- LeadsPageCreateContactTest -->
   </suite> <!-- TestSuite1 -->
 </testng-results>
