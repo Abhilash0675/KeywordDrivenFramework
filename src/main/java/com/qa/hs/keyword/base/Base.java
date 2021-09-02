@@ -45,10 +45,9 @@ public class Base {
 	public Properties init_properties(){
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("/home/naveen/git/AvesdoAutomation/src/main/java/com/qa/hs/keyword/config/config.properties");
-//			FileInputStream ip = new FileInputStream("C:\\selenium-automation\\KeywordDrivenFramework-master\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
-	
-			prop.load(ip);
+			
+		FileInputStream ip = new FileInputStream("C:\\Automation\\NEW\\KeywordDrivenFramework\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
+			prop.load(ip); // Config properties path 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
