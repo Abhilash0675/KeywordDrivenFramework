@@ -4,43 +4,17 @@
   <listeners>
     <listener class-name="com.qa.hs.keyword.listeners.Listener"/>
   </listeners>
-  <test thread-count="5" name="LeadsPageCreateContactTest(failed)">
+  <test thread-count="5" name="LoginPageTest(failed)">
     <classes>
-      <class name="com.qa.hs.tests.LeadsModuleCreateContactTest">
+      <class name="com.qa.hs.tests.LoginTest">
         <methods>
           <include name="start"/>
           <include name="first"/>
-          <include name="leadsTest"/>
+          <include name="loginTest"/>
           <include name="end"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- com.qa.hs.tests.LeadsModuleCreateContactTest -->
+      </class> <!-- com.qa.hs.tests.LoginTest -->
     </classes>
-  </test> <!-- LeadsPageCreateContactTest(failed) -->
-  <test thread-count="5" name="LeadsPageEditFormTest(failed)">
-    <classes>
-      <class name="com.qa.hs.tests.LeadsModuleEditFormTest">
-        <methods>
-          <include name="start"/>
-          <include name="leadsTest"/>
-          <include name="first"/>
-          <include name="end"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qa.hs.tests.LeadsModuleEditFormTest -->
-    </classes>
-  </test> <!-- LeadsPageEditFormTest(failed) -->
-  <test thread-count="5" name="SalesModuleAllocatUnitTest(failed)">
-    <classes>
-      <class name="com.qa.hs.tests.SalesModuleAllocatUnitTest">
-        <methods>
-          <include name="start"/>
-          <include name="first"/>
-          <include name="end"/>
-          <include name="salesModuleAllocatUnitTest"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qa.hs.tests.SalesModuleAllocatUnitTest -->
-    </classes>
-  </test> <!-- SalesModuleAllocatUnitTest(failed) -->
+  </test> <!-- LoginPageTest(failed) -->
 </suite> <!-- Failed suite [TestSuite1] -->
