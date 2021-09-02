@@ -25,7 +25,15 @@ public class Base {
 	
 	public WebDriver init_driver(String browserName){
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriverPath"));
+			//System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriverPath"));
+			//String path = "./resources/chromedriver";
+			//String path = System.getProperty("user.dir")+"/resources/chromedriver";
+			//System.out.println("************"+path+"*******************************");
+			
+			//System.setProperty("webdriver.chrome.driver","/home/naveen/git/AvesdoAutomation/resources/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",prop.getProperty("chromedriverPath"));
+
+			//System.setProperty("webdriver.chrome.driver",prop.getProperty("chromedriverPath"));
 			if(prop.getProperty("headless").equals("yes")){
 				//headless mode:
 				ChromeOptions options = new ChromeOptions();
@@ -45,9 +53,13 @@ public class Base {
 	public Properties init_properties(){
 		prop = new Properties();
 		try {
-			
-		FileInputStream ip = new FileInputStream("C:\\Automation\\NEW\\KeywordDrivenFramework\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
-			prop.load(ip); // Config properties path 
+
+			String extension = "/src/main/java/com/qa/hs/keyword/config/config.properties";
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+extension);
+//			FileInputStream ip = new FileInputStream("C:\\selenium-automation\\KeywordDrivenFramework-master\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
+	
+			prop.load(ip);
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -56,20 +68,6 @@ public class Base {
 		return prop;
 	}
 	
-//	public String getScreenShotPath(String methodName, WebDriver dr) {
-//		TakesScreenshot ts = (TakesScreenshot)dr;
-//		File source = ts.getScreenshotAs(OutputType.FILE);
-//		String destination = System.getenv("user.dir")+"/reports/"+methodName+".png";
-//		try {
-//			FileUtils.copyFile(source, new File(destination));
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		System.out.println("=============== screenshot path  ================"+destination);
-//
-//		return destination;
-//	}
 	
 	
 	
