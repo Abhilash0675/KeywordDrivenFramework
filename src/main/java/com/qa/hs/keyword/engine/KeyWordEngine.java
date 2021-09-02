@@ -49,7 +49,8 @@ public class KeyWordEngine extends BaseClass {
 		//WebDriverWait wait = new WebDriverWait(driver,900);
 		base = new Base();
 		prop = base.init_properties();
-		SCENARIO_SHEET_PATH = prop.getProperty("scenarioSheetPath");
+		String extension = "/src/main/java/com/qa/hs/keyword/scenarios/Avesdo_Test_scenarios.xlsx";
+		SCENARIO_SHEET_PATH = System.getProperty("user.dir")+extension;
 
 		FileInputStream file = null;
 		try {
