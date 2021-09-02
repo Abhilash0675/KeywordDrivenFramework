@@ -6,7 +6,7 @@
 			<class name="com.qa.hs.tests.LoginTest" />
 		</classes>
 	</test>
-	<test thread-count="5" name="LeadsPageCreateContactTest">
+	<!--  <test thread-count="5" name="LeadsPageCreateContactTest">
 		<classes>
 			<class name="com.qa.hs.tests.LoginTest" />
 			<class name="com.qa.hs.tests.LeadsModuleCreateContactTest" />
@@ -23,5 +23,5 @@
 			<class name="com.qa.hs.tests.LoginTest" />
 			<class name="com.qa.hs.tests.SalesModuleAllocatUnitTest" />
 		</classes>
-	</test>
+	</test> -->
 </suite> <!-- Suite -->

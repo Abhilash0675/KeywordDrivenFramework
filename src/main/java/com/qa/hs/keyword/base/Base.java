@@ -66,20 +66,6 @@ public class Base {
 		return prop;
 	}
 	
-//	public String getScreenShotPath(String methodName, WebDriver dr) {
-//		TakesScreenshot ts = (TakesScreenshot)dr;
-//		File source = ts.getScreenshotAs(OutputType.FILE);
-//		String destination = System.getenv("user.dir")+"/reports/"+methodName+".png";
-//		try {
-//			FileUtils.copyFile(source, new File(destination));
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		System.out.println("=============== screenshot path  ================"+destination);
-//
-//		return destination;
-//	}
 	
 	
 	

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestSuite1" class="navigator-link">
-              <span class="suite-name border-skipped">TestSuite1</span>
+              <span class="suite-name border-failed">TestSuite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-TestSuite1" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,51 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,  7 skipped,  </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-TestSuite1" class="hide-methods skipped suite-TestSuite1"> (hide)</a> <!-- hide-methods skipped suite-TestSuite1 -->
-                      <a href="#" panel-name="suite-TestSuite1" class="show-methods skipped suite-TestSuite1"> (show)</a> <!-- show-methods skipped suite-TestSuite1 -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite1" class="hide-methods failed suite-TestSuite1"> (hide)</a> <!-- hide-methods failed suite-TestSuite1 -->
+                      <a href="#" panel-name="suite-TestSuite1" class="show-methods failed suite-TestSuite1"> (show)</a> <!-- show-methods failed suite-TestSuite1 -->
                     </span>
-                    <div class="method-list-content skipped suite-TestSuite1">
+                    <div class="method-list-content failed suite-TestSuite1">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LeadsModuleCreateContactTest" class="method navigator-link" hash-for-method="leadsTest">leadsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LeadsModuleEditFormTest" class="method navigator-link" hash-for-method="leadsTest">leadsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite1" title="com.qa.hs.tests.SalesModuleAllocatUnitTest" class="method navigator-link" hash-for-method="salesModuleAllocatUnitTest">salesModuleAllocatUnitTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-TestSuite1 -->
+                    </div> <!-- method-list-content failed suite-TestSuite1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -147,93 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite1" class="panel TestSuite1">
-          <div class="suite-TestSuite1-class-skipped">
+          <div class="suite-TestSuite1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.qa.hs.tests.SalesModuleAllocatUnitTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="salesModuleAllocatUnitTest">
-                  </a> <!-- salesModuleAllocatUnitTest -->
-                  <span class="method-name">salesModuleAllocatUnitTest</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The driver is not executable: /home/naveen/git/AvesdoAutomation/chromedriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.qa.hs.keyword.base.Base.init_driver(Base.java:43)
-	at com.qa.hs.tests.BaseClass.start(BaseClass.java:44)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite1-class-skipped -->
-          <div class="suite-TestSuite1-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.qa.hs.tests.LeadsModuleCreateContactTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="leadsTest">
-                  </a> <!-- leadsTest -->
-                  <span class="method-name">leadsTest</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The driver is not executable: /home/naveen/git/AvesdoAutomation/chromedriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.qa.hs.keyword.base.Base.init_driver(Base.java:43)
-	at com.qa.hs.tests.BaseClass.start(BaseClass.java:44)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite1-class-skipped -->
-          <div class="suite-TestSuite1-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.qa.hs.tests.LeadsModuleEditFormTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="leadsTest">
-                  </a> <!-- leadsTest -->
-                  <span class="method-name">leadsTest</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The driver is not executable: /home/naveen/git/AvesdoAutomation/chromedriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.qa.hs.keyword.base.Base.init_driver(Base.java:43)
-	at com.qa.hs.tests.BaseClass.start(BaseClass.java:44)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite1-class-skipped -->
-          <div class="suite-TestSuite1-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.qa.hs.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -242,83 +128,31 @@
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The driver is not executable: /home/naveen/git/AvesdoAutomation/chromedriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.qa.hs.keyword.base.Base.init_driver(Base.java:43)
-	at com.qa.hs.tests.BaseClass.start(BaseClass.java:44)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The driver is not executable: /home/naveen/git/AvesdoAutomation/chromedriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.qa.hs.keyword.base.Base.init_driver(Base.java:43)
-	at com.qa.hs.tests.BaseClass.start(BaseClass.java:44)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The driver is not executable: /home/naveen/git/AvesdoAutomation/chromedriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.qa.hs.keyword.base.Base.init_driver(Base.java:43)
-	at com.qa.hs.tests.BaseClass.start(BaseClass.java:44)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The driver is not executable: /home/naveen/git/AvesdoAutomation/chromedriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:150)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.qa.hs.keyword.base.Base.init_driver(Base.java:43)
-	at com.qa.hs.tests.BaseClass.start(BaseClass.java:44)
-... Removed 24 stack frames
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=91.0.4472.77)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Unknown&apos;, ip: &apos;Unknown&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.6.4-040604-generic&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.eHiTBn}, goog:chromeOptions: {debuggerAddress: localhost:34293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c5206216670eb93265e7268300e7e0d6
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.qa.hs.keyword.engine.KeyWordEngine.startExecution(KeyWordEngine.java:176)
+	at com.qa.hs.tests.LoginTest.loginTest(LoginTest.java:12)
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite1-class-skipped -->
+          </div> <!-- suite-TestSuite1-class-failed -->
         </div> <!-- panel TestSuite1 -->
         <div panel-name="test-xml-TestSuite1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -334,24 +168,6 @@
       &lt;class name=&quot;com.qa.hs.tests.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LoginPageTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;LeadsPageCreateContactTest&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.qa.hs.tests.LoginTest&quot;/&gt;
-      &lt;class name=&quot;com.qa.hs.tests.LeadsModuleCreateContactTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LeadsPageCreateContactTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;LeadsPageEditFormTest&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.qa.hs.tests.LoginTest&quot;/&gt;
-      &lt;class name=&quot;com.qa.hs.tests.LeadsModuleEditFormTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LeadsPageEditFormTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;SalesModuleAllocatUnitTest&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.qa.hs.tests.LoginTest&quot;/&gt;
-      &lt;class name=&quot;com.qa.hs.tests.SalesModuleAllocatUnitTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- SalesModuleAllocatUnitTest --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -364,15 +180,6 @@
             <ul>
               <li>
                 <span class="test-name">LoginPageTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">LeadsPageCreateContactTest (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">LeadsPageEditFormTest (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">SalesModuleAllocatUnitTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -398,40 +205,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.qa.hs.tests.LoginTest')
-data.setCell(0, 3, 0);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'leadsTest')
-data.setCell(1, 2, 'com.qa.hs.tests.LeadsModuleCreateContactTest')
-data.setCell(1, 3, 0);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTest')
-data.setCell(2, 2, 'com.qa.hs.tests.LoginTest')
-data.setCell(2, 3, 0);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginTest')
-data.setCell(3, 2, 'com.qa.hs.tests.LoginTest')
-data.setCell(3, 3, 0);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'leadsTest')
-data.setCell(4, 2, 'com.qa.hs.tests.LeadsModuleEditFormTest')
-data.setCell(4, 3, 0);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'salesModuleAllocatUnitTest')
-data.setCell(5, 2, 'com.qa.hs.tests.SalesModuleAllocatUnitTest')
-data.setCell(5, 3, 0);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginTest')
-data.setCell(6, 2, 'com.qa.hs.tests.LoginTest')
-data.setCell(6, 3, 0);
+data.setCell(0, 3, 22631);
 window.suiteTableData['TestSuite1']= { tableData: data, tableDiv: 'times-div-TestSuite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-TestSuite1">
               </div> <!-- times-div-TestSuite1 -->
             </div> <!-- times-div -->
@@ -446,48 +229,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestSuite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.hs.tests.SalesModuleAllocatUnitTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">start</span>
-                <br/>
-                <span class="ignored-method-name">first</span>
-                <br/>
-                <span class="ignored-method-name">end</span>
-                <br/>
-                <span class="ignored-method-name">quit</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.hs.tests.LeadsModuleCreateContactTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">start</span>
-                <br/>
-                <span class="ignored-method-name">first</span>
-                <br/>
-                <span class="ignored-method-name">end</span>
-                <br/>
-                <span class="ignored-method-name">quit</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.hs.tests.LeadsModuleEditFormTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">start</span>
-                <br/>
-                <span class="ignored-method-name">first</span>
-                <br/>
-                <span class="ignored-method-name">end</span>
-                <br/>
-                <span class="ignored-method-name">quit</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestSuite1" class="panel">
@@ -502,72 +246,21 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">start</span>
-                <span class="method-start">18 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">start</span>
-                <span class="method-start">267 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">start</span>
-                <span class="method-start">314 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">start</span>
-                <span class="method-start">353 ms</span>
+                <span class="method-start">10 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginTest</span>
-                <span class="method-start">-1630582520768 ms</span>
+                <span class="method-start">23908 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">-1630582520768 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.hs.tests.LeadsModuleCreateContactTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">leadsTest</span>
-                <span class="method-start">-1630582520768 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.hs.tests.LoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">-1630582520768 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.hs.tests.LeadsModuleEditFormTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">leadsTest</span>
-                <span class="method-start">-1630582520768 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.hs.tests.LoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">-1630582520768 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.hs.tests.SalesModuleAllocatUnitTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">salesModuleAllocatUnitTest</span>
-                <span class="method-start">-1630582520768 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">end</span>
+                <span class="method-start">47088 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
