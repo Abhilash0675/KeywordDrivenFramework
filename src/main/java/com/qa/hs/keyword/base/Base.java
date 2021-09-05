@@ -53,11 +53,13 @@ public class Base {
 	public Properties init_properties(){
 		prop = new Properties();
 		try {
+
 			String extension = "/src/main/java/com/qa/hs/keyword/config/config.properties";
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+extension);
 //			FileInputStream ip = new FileInputStream("C:\\selenium-automation\\KeywordDrivenFramework-master\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
 	
 			prop.load(ip);
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

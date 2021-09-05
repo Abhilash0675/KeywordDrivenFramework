@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestSuite1">
+<<<<<<< HEAD
 <!--	<test thread-count="5" name="LoginPageTest">
+=======
+
+	<test thread-count="5" name="LoginPageTest">
+>>>>>>> a0414b7a9ccd1bfa970695d7f97528358b04c8e7
 		<classes>
 			<class name="com.qa.hs.tests.LoginTest" />
 		</classes>
@@ -24,4 +29,5 @@
 			<class name="com.qa.hs.tests.SalesModuleAllocatUnitTest" />
 		</classes>
 	</test> -->
+
 </suite> <!-- Suite -->
