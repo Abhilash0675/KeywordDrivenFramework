@@ -32,7 +32,7 @@ public class KeyWordEngine extends BaseClass {
 //		this.driver=driver;
 //	}
 
-	public WebDriverWait wait = new WebDriverWait(driver,60);
+	public WebDriverWait wait = new WebDriverWait(driver,90);
 	public Properties prop;
 
 	public static Workbook book;
