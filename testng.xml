@@ -7,13 +7,13 @@
 			<class name="com.qa.hs.tests.LoginTest" />
 		</classes>
 	</test>
-	<!--  <test thread-count="5" name="LeadsPageCreateContactTest">
+	  <test thread-count="5" name="LeadsPageCreateContactTest">
 		<classes>
 			<class name="com.qa.hs.tests.LoginTest" />
 			<class name="com.qa.hs.tests.LeadsModuleCreateContactTest" />
 		</classes>
 	</test>
-	<test thread-count="5" name="LeadsPageEditFormTest">
+<!--	<test thread-count="5" name="LeadsPageEditFormTest">
 		<classes>
 			<class name="com.qa.hs.tests.LoginTest" />
 			<class name="com.qa.hs.tests.LeadsModuleEditFormTest" />
