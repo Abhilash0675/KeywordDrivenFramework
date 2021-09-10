@@ -11,6 +11,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -192,6 +193,12 @@ public class KeyWordEngine extends BaseClass {
 						dropdodropwn.deselectByVisibleText(value);
 						Thread.sleep(1000);
 
+					}else if (action.equalsIgnoreCase("click jse")) {
+						System.out.println("came");
+						System.out.println(locatorValue);
+						JavascriptExecutor jse = (JavascriptExecutor)driver;
+						jse.executeScript("arguments[0].click();", element);
+						System.out.println("done");
 					}
 					
 					locatorType = null;

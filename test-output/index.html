@@ -142,20 +142,20 @@
                   <a name="salesModuleAllocatUnitTest">
                   </a> <!-- salesModuleAllocatUnitTest -->
                   <span class="method-name">salesModuleAllocatUnitTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@class=&quot;img-responsive ng-scope ng-isolate-scope&quot;] (tried for 90 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[@status=&apos;Available&apos;])[1] (tried for 90 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.hs.keyword.engine.KeyWordEngine.startExecution(KeyWordEngine.java:170)
+	at com.qa.hs.keyword.engine.KeyWordEngine.startExecution(KeyWordEngine.java:171)
 	at com.qa.hs.tests.SalesModuleAllocatUnitTest.salesModuleAllocatUnitTest(SalesModuleAllocatUnitTest.java:12)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@status=&apos;Available&apos;])[1]&quot;}
   (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Unknown&apos;, ip: &apos;Unknown&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.6.4-040604-generic&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.MSva5B}, goog:chromeOptions: {debuggerAddress: localhost:41109}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 74f5556edc1d335a5a5ec385df913de0
-*** Element info: {Using=xpath, value=//img[@class=&quot;img-responsive ng-scope ng-isolate-scope&quot;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.eYgYWW}, goog:chromeOptions: {debuggerAddress: localhost:42739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a7ff28869fc7157bcf393150bae78200
+*** Element info: {Using=xpath, value=(//div[@status=&apos;Available&apos;])[1]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -248,16 +248,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'salesModuleAllocatUnitTest')
 data.setCell(0, 2, 'com.qa.hs.tests.SalesModuleAllocatUnitTest')
-data.setCell(0, 3, 90367);
+data.setCell(0, 3, 156530);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.qa.hs.tests.LoginTest')
-data.setCell(1, 3, 24795);
+data.setCell(1, 3, 55780);
 window.suiteTableData['TestSuite1']= { tableData: data, tableDiv: 'times-div-TestSuite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-TestSuite1">
               </div> <!-- times-div-TestSuite1 -->
             </div> <!-- times-div -->
@@ -303,11 +303,11 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">start</span>
-                <span class="method-start">11 ms</span>
+                <span class="method-start">12 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">2178 ms</span>
+                <span class="method-start">19559 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -316,17 +316,19 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">salesModuleAllocatUnitTest</span>
-                <span class="method-start">26977 ms</span>
+                <span class="method-start">75370 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hs.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">end</span>
-                <span class="method-start">117361 ms</span>
+                <span class="method-start">231973 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">quit</span>
+                <span class="method-start">234137 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
