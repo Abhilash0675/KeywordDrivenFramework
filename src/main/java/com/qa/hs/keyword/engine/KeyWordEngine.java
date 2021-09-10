@@ -194,11 +194,11 @@ public class KeyWordEngine extends BaseClass {
 						Thread.sleep(1000);
 
 					}else if (action.equalsIgnoreCase("click jse")) {
-						System.out.println("came");
-						System.out.println(locatorValue);
+						//System.out.println("came");
+						//System.out.println(locatorValue);
 						JavascriptExecutor jse = (JavascriptExecutor)driver;
 						jse.executeScript("arguments[0].click();", element);
-						System.out.println("done");
+						//System.out.println("done");
 					}
 					
 					locatorType = null;
