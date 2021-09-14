@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TestSuite1]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
   <test thread-count="5" name="LeadsPageEditFormTest(failed)">
     <classes>
       <class name="com.qa.hs.tests.LeadsModuleEditFormTest">
-=======
-  <test thread-count="5" name="SalesModuleAllocatUnitGroupRealtorsTest(failed)">
-    <classes>
-      <class name="com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest">
->>>>>>> 570e6cf35829b4e7897ccb03d6184545922fdaa5
         <methods>
           <include name="start"/>
           <include name="leadsTest"/>
           <include name="first"/>
-<<<<<<< HEAD
           <include name="end"/>
           <include name="quit"/>
         </methods>
       </class> <!-- com.qa.hs.tests.LeadsModuleEditFormTest -->
     </classes>
   </test> <!-- LeadsPageEditFormTest(failed) -->
-=======
-          <include name="salesModuleAllocatUnitTest"/>
-          <include name="end"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest -->
-    </classes>
-  </test> <!-- SalesModuleAllocatUnitGroupRealtorsTest(failed) -->
->>>>>>> 570e6cf35829b4e7897ccb03d6184545922fdaa5
 </suite> <!-- Failed suite [TestSuite1] -->

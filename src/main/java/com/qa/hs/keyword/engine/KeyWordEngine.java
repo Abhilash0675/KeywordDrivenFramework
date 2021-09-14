@@ -125,12 +125,12 @@ public class KeyWordEngine extends BaseClass {
 					float num = Float.parseFloat(value);
 					int waitingTime = (int) num;
 					Thread.sleep(waitingTime);
-					System.out.println("=========================waited for=================="+waitingTime);
+		//			System.out.println("=========================waited for=================="+waitingTime);
 					break;
 				case "tab":
 					ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 					driver.switchTo().window(tabs.get(1));
-					System.out.println("switched to second tab======================");
+		//			 System.out.println("switched to second tab======================");
 					Thread.sleep(1000);
 					break;
 					
