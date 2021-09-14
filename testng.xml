@@ -12,7 +12,7 @@
 			<class name="com.qa.hs.tests.LoginTest" />
 			<class name="com.qa.hs.tests.LeadsModuleCreateContactTest" />
 		</classes>  
-	</test> -->
+	</test> 
 
 	<test thread-count="5" name="LeadsPageEditFormTest">
 
@@ -22,12 +22,28 @@
 		</classes>
 
 	</test> 
+<<<<<<< HEAD
 	<!--     <test thread-count="5" name="SalesModuleAllocatUnitTest">
+=======
+	<test thread-count="5" name="SalesModuleAllocatUnitIndividualRealtorTest">
+>>>>>>> 570e6cf35829b4e7897ccb03d6184545922fdaa5
 
 		<classes>
 			<class name="com.qa.hs.tests.LoginTest" />
-			<class name="com.qa.hs.tests.SalesModuleAllocatUnitTest" />
+			<class name="com.qa.hs.tests.SalesModuleAllocatUnitIndividualRealtorTest" />
 		</classes>
+<<<<<<< HEAD
 	</test> -->
+=======
+	</test> --> 
+	<test thread-count="5" name="SalesModuleAllocatUnitGroupRealtorsTest">
+
+		<classes>
+			<class name="com.qa.hs.tests.LoginTest" />
+			<class name="com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest" />
+		</classes>
+	</test>
+	
+>>>>>>> 570e6cf35829b4e7897ccb03d6184545922fdaa5
 
 </suite> <!-- Suite -->
