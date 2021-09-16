@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="4" total="6" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -24,10 +25,38 @@
           </reporter-output>
         </test-method> <!-- end -->
         <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.LoginTest@1a72a540]" started-at="2021-09-14T15:55:09Z" name="quit" finished-at="2021-09-14T15:55:09Z" duration-ms="19" status="PASS">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-02T10:13:07Z" name="TestSuite1" finished-at="2021-09-02T10:14:10Z" duration-ms="62483">
+    <groups>
+    </groups>
+    <test started-at="2021-09-02T10:13:07Z" name="LoginPageTest" finished-at="2021-09-02T10:14:10Z" duration-ms="62483">
+      <class name="com.qa.hs.tests.LoginTest">
+        <test-method is-config="true" signature="first()[pri:0, instance:com.qa.hs.tests.LoginTest@497486b3]" started-at="2021-09-02T10:13:07Z" name="first" finished-at="2021-09-02T10:13:07Z" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.hs.tests.LoginTest@497486b3]" started-at="2021-09-02T10:13:07Z" name="start" finished-at="2021-09-02T10:13:36Z" duration-ms="28829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LoginTest@497486b3]" started-at="2021-09-02T10:13:37Z" name="loginTest" finished-at="2021-09-02T10:14:09Z" duration-ms="31964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="end()[pri:0, instance:com.qa.hs.tests.LoginTest@497486b3]" started-at="2021-09-02T10:14:09Z" name="end" finished-at="2021-09-02T10:14:10Z" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.LoginTest@497486b3]" started-at="2021-09-02T10:14:12Z" name="quit" finished-at="2021-09-02T10:14:12Z" duration-ms="66" status="PASS">
+>>>>>>> working
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.qa.hs.tests.LoginTest -->
+<<<<<<< HEAD
       <class name="com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest">
         <test-method signature="salesModuleAllocatUnitTest()[pri:1, instance:com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest@27d5a580]" started-at="2021-09-14T15:52:23Z" name="salesModuleAllocatUnitTest" finished-at="2021-09-14T15:55:08Z" duration-ms="165007" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
@@ -100,5 +129,8 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
         </test-method> <!-- salesModuleAllocatUnitTest -->
       </class> <!-- com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest -->
     </test> <!-- SalesModuleAllocatUnitGroupRealtorsTest -->
+=======
+    </test> <!-- LoginPageTest -->
+>>>>>>> working
   </suite> <!-- TestSuite1 -->
 </testng-results>

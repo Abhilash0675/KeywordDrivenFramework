@@ -24,7 +24,11 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
+<<<<<<< HEAD
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
+=======
+      <span class="top-banner-font-1">1 suite</span>
+>>>>>>> working
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +42,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestSuite1" class="navigator-link">
-              <span class="suite-name border-failed">TestSuite1</span>
+              <span class="suite-name border-passed">TestSuite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,6 +95,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
+<<<<<<< HEAD
                     <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
@@ -106,6 +111,9 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TestSuite1 -->
+=======
+                    <span class="method-stats">1 method,   1 passed</span>
+>>>>>>> working
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,6 +139,7 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite1" class="panel TestSuite1">
+<<<<<<< HEAD
           <div class="suite-TestSuite1-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -176,6 +185,8 @@ Session ID: d746117038ddc57561218aacc68ef6a8
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-TestSuite1-class-failed -->
+=======
+>>>>>>> working
           <div class="suite-TestSuite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -201,12 +212,23 @@ Session ID: d746117038ddc57561218aacc68ef6a8
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestSuite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+<<<<<<< HEAD
   &lt;test thread-count=&quot;5&quot; name=&quot;SalesModuleAllocatUnitGroupRealtorsTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.hs.tests.LoginTest&quot;/&gt;
       &lt;class name=&quot;com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SalesModuleAllocatUnitGroupRealtorsTest --&gt;
+=======
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.hs.keyword.listeners.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginPageTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.hs.tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginPageTest --&gt;
+>>>>>>> working
 &lt;/suite&gt; &lt;!-- TestSuite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,7 +240,11 @@ Session ID: d746117038ddc57561218aacc68ef6a8
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+<<<<<<< HEAD
                 <span class="test-name">SalesModuleAllocatUnitGroupRealtorsTest (2 classes)</span>
+=======
+                <span class="test-name">LoginPageTest (1 class)</span>
+>>>>>>> working
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,6 +270,7 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
+<<<<<<< HEAD
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'salesModuleAllocatUnitTest')
@@ -253,11 +280,22 @@ data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.qa.hs.tests.LoginTest')
 data.setCell(1, 3, 35614);
+=======
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.qa.hs.tests.LoginTest')
+data.setCell(0, 3, 31964);
+>>>>>>> working
 window.suiteTableData['TestSuite1']= { tableData: data, tableDiv: 'times-div-TestSuite1'}
 return data;
 }
               </script>
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 3 minutes</span>
+=======
+              <span class="suite-total-time">Total running time: 31 seconds</span>
+>>>>>>> working
               <div id="times-div-TestSuite1">
               </div> <!-- times-div-TestSuite1 -->
             </div> <!-- times-div -->
@@ -272,6 +310,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestSuite1" class="panel">
           <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
             <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
@@ -288,6 +327,11 @@ return data;
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
+=======
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+>>>>>>> working
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestSuite1" class="panel">
@@ -303,6 +347,7 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">start</span>
+<<<<<<< HEAD
                 <span class="method-start">12 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
@@ -328,6 +373,21 @@ return data;
               <div class="configuration-suite after">
                 <span class="method-name">quit</span>
                 <span class="method-start">203048 ms</span>
+=======
+                <span class="method-start">16 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">29271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">end</span>
+                <span class="method-start">61255 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">quit</span>
+                <span class="method-start">64684 ms</span>
+>>>>>>> working
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

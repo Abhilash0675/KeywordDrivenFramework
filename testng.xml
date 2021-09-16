@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestSuite1">
+<<<<<<< HEAD
 
  <!--   <test thread-count="5" name="LoginPageTest">
 		<classes>
@@ -8,6 +9,17 @@
 		</classes>
 	</test> 
 	  <test thread-count="5" name="LeadsPageCreateContactTest">
+=======
+	<listeners>
+		<listener class-name="com.qa.hs.keyword.listeners.Listener"/>
+	</listeners>
+	  <test thread-count="5" name="LoginPageTest">
+		<classes>
+			<class name="com.qa.hs.tests.LoginTest" />
+		</classes>
+	</test>
+	<!-- <test thread-count="5" name="LeadsPageCreateContactTest">
+>>>>>>> working
 		<classes>
 			<class name="com.qa.hs.tests.LoginTest" />
 			<class name="com.qa.hs.tests.LeadsModuleCreateContactTest" />
@@ -35,7 +47,12 @@
 			<class name="com.qa.hs.tests.LoginTest" />
 			<class name="com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest" />
 		</classes>
+<<<<<<< HEAD
 	</test>
 	
 
 </suite> <!-- Suite -->
+=======
+	</test>  -->
+</suite> <!-- Suite -->
+>>>>>>> working

@@ -140,12 +140,16 @@ public class KeyWordEngine extends BaseClass {
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
+						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("click")) {
 						element.click();
+						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
+						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
+						log.info("Action Performed : "+testStep);
 					//	System.out.println("text from element : " + elementText);
 					}
 					locatorType = null;
@@ -173,24 +177,30 @@ public class KeyWordEngine extends BaseClass {
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
+						log.info("Action Performed : "+testStep);
 						//Thread.sleep(1000);
 					} else if (action.equalsIgnoreCase("click")) {
 						element.click();
+						log.info("Action Performed : "+testStep);
 						//Thread.sleep(5000);
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
+						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
+						log.info("Action Performed : "+testStep);
 					} else if (action.equalsIgnoreCase("mat select")) {
 						element.click();
 						//Thread.sleep(2000);
 						wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(value)));
 						driver.findElement(By.xpath(value)).click();
+						log.info("Action Performed : "+testStep);
 						//Thread.sleep(2000);
 
 					}else if (action.equalsIgnoreCase("select")) {
 						Select dropdodropwn = new Select(element);
 						dropdodropwn.deselectByVisibleText(value);
+						log.info("Action Performed : "+testStep);
 						Thread.sleep(1000);
 
 					}else if (action.equalsIgnoreCase("click jse")) {
