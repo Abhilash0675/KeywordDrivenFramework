@@ -208,6 +208,7 @@ public class KeyWordEngine extends BaseClass {
 						//System.out.println(locatorValue);
 						JavascriptExecutor jse = (JavascriptExecutor)driver;
 						jse.executeScript("arguments[0].click();", element);
+						log.info("Action Performed : "+testStep);
 						//System.out.println("done");
 					}
 					

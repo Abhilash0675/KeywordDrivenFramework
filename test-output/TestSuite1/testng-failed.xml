@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TestSuite1]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="SalesModuleAllocatUnitGroupRealtorsTest(failed)">
-    <classes>
-      <class name="com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest">
-        <methods>
-          <include name="start"/>
-          <include name="first"/>
-          <include name="salesModuleAllocatUnitTest"/>
-          <include name="end"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest -->
-    </classes>
-  </test> <!-- SalesModuleAllocatUnitGroupRealtorsTest(failed) -->
-=======
   <listeners>
     <listener class-name="com.qa.hs.keyword.listeners.Listener"/>
   </listeners>
@@ -32,5 +17,26 @@
       </class> <!-- com.qa.hs.tests.LoginTest -->
     </classes>
   </test> <!-- LoginPageTest(failed) -->
->>>>>>> working
+  <test thread-count="5" name="SalesModuleAllocatUnitGroupRealtorsTest(failed)">
+    <classes>
+      <class name="com.qa.hs.tests.LoginTest">
+        <methods>
+          <include name="start"/>
+          <include name="first"/>
+          <include name="loginTest"/>
+          <include name="end"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qa.hs.tests.LoginTest -->
+      <class name="com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest">
+        <methods>
+          <include name="start"/>
+          <include name="first"/>
+          <include name="salesModuleAllocatUnitTest"/>
+          <include name="end"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest -->
+    </classes>
+  </test> <!-- SalesModuleAllocatUnitGroupRealtorsTest(failed) -->
 </suite> <!-- Failed suite [TestSuite1] -->
