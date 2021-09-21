@@ -17,26 +17,4 @@
       </class> <!-- com.qa.hs.tests.LoginTest -->
     </classes>
   </test> <!-- LoginPageTest(failed) -->
-  <test thread-count="5" name="SalesModuleAllocatUnitGroupRealtorsTest(failed)">
-    <classes>
-      <class name="com.qa.hs.tests.LoginTest">
-        <methods>
-          <include name="start"/>
-          <include name="first"/>
-          <include name="loginTest"/>
-          <include name="end"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qa.hs.tests.LoginTest -->
-      <class name="com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest">
-        <methods>
-          <include name="start"/>
-          <include name="first"/>
-          <include name="salesModuleAllocatUnitTest"/>
-          <include name="end"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest -->
-    </classes>
-  </test> <!-- SalesModuleAllocatUnitGroupRealtorsTest(failed) -->
 </suite> <!-- Failed suite [TestSuite1] -->

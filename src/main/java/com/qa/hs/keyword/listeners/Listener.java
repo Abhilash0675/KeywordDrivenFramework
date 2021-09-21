@@ -43,7 +43,7 @@ public class Listener extends BaseClass implements ITestListener{
 		try {
 			String methodName = result.getMethod().getMethodName();
 			log.error("TEST FAILED : "+methodName);
-			log.error(extentTest.get().fail(result.getThrowable()));
+			log.error(result.getThrowable());
 			//WebDriver dr = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 			//System.out.println("=============== PARMS SENT  ================" +methodName+ "==="+driver);
 			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(methodName),result.getMethod().getMethodName());
@@ -51,6 +51,7 @@ public class Listener extends BaseClass implements ITestListener{
 		} catch (IllegalArgumentException | SecurityException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		//}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

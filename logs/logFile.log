@@ -1,0 +1,10 @@
+13:54:09.782 [main] INFO  com.qa.hs.tests.LoginTest - driver initiated
+13:54:11.879 [main] INFO  com.qa.hs.tests.LoginTest - cookies deleted
+13:54:12.046 [main] INFO  com.qa.hs.tests.LoginTest - window maximized
+13:54:12.046 [main] INFO  com.qa.hs.tests.LoginTest - initialization completed
+13:54:12.093 [main] INFO  com.qa.hs.tests.LoginTest - TEST STARTED : loginTest
+13:54:19.345 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter email
+13:54:19.672 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter password
+13:55:50.158 [main] ERROR com.qa.hs.tests.LoginTest - TEST FAILED : loginTest
+13:55:50.160 [main] ERROR com.qa.hs.tests.LoginTest - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[@class='btn btn-primar'] (tried for 90 second(s) with 500 milliseconds interval)
+13:55:51.975 [main] INFO  com.qa.hs.tests.LoginTest - TEST FINISHED
