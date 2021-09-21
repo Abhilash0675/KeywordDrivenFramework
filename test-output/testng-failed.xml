@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TestSuite1]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <listeners>
     <listener class-name="com.qa.hs.keyword.listeners.Listener"/>
   </listeners>
   <test thread-count="5" name="LoginPageTest(failed)">
     <classes>
       <class name="com.qa.hs.tests.LoginTest">
+=======
+  <test thread-count="5" name="LeadsPageEditFormTest(failed)">
+    <classes>
+      <class name="com.qa.hs.tests.LeadsModuleEditFormTest">
+>>>>>>> b2648c77461c3ab7a3e1f5ba1ebf598d254a3242
         <methods>
           <include name="start"/>
+          <include name="leadsTest"/>
           <include name="first"/>
+<<<<<<< HEAD
           <include name="loginTest"/>
           <include name="end"/>
           <include name="quit"/>
@@ -17,4 +25,12 @@
       </class> <!-- com.qa.hs.tests.LoginTest -->
     </classes>
   </test> <!-- LoginPageTest(failed) -->
+=======
+          <include name="end"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qa.hs.tests.LeadsModuleEditFormTest -->
+    </classes>
+  </test> <!-- LeadsPageEditFormTest(failed) -->
+>>>>>>> b2648c77461c3ab7a3e1f5ba1ebf598d254a3242
 </suite> <!-- Failed suite [TestSuite1] -->
