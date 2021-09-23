@@ -1,10 +1,23 @@
-11:21:55.552 [main] INFO  com.qa.hs.tests.LoginTest - driver initiated
-11:21:56.892 [main] INFO  com.qa.hs.tests.LoginTest - cookies deleted
-11:21:57.009 [main] INFO  com.qa.hs.tests.LoginTest - window maximized
-11:21:57.009 [main] INFO  com.qa.hs.tests.LoginTest - initialization completed
-11:21:57.051 [main] INFO  com.qa.hs.tests.LoginTest - TEST STARTED : loginTest
-11:22:00.858 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter email
-11:22:01.072 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter password
-11:22:13.479 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click log in
-11:22:13.483 [main] INFO  com.qa.hs.tests.LoginTest - TEST PASSED : loginTest
-11:22:14.117 [main] INFO  com.qa.hs.tests.LoginTest - TEST FINISHED
+13:16:49.457 [main] INFO  com.qa.hs.tests.LoginTest - driver initiated
+13:16:50.285 [main] INFO  com.qa.hs.tests.LoginTest - cookies deleted
+13:16:50.405 [main] INFO  com.qa.hs.tests.LoginTest - window maximized
+13:16:50.406 [main] INFO  com.qa.hs.tests.LoginTest - initialization completed
+13:16:50.429 [main] INFO  com.qa.hs.tests.LoginTest - TEST STARTED : loginTest
+13:16:57.722 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter email
+13:16:57.942 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : enter password
+13:17:20.347 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click log in
+13:17:20.355 [main] INFO  com.qa.hs.tests.LoginTest - TEST PASSED : loginTest
+13:17:20.358 [main] INFO  com.qa.hs.tests.LoginTest - TEST STARTED : contractsNotSignedTest
+13:20:17.587 [main] INFO  com.qa.hs.tests.LoginTest - Action Performed : click Skagen Townhouse
+13:21:48.041 [main] ERROR com.qa.hs.tests.LoginTest - TEST FAILED : contractsNotSignedTest
+13:21:48.043 [main] ERROR com.qa.hs.tests.LoginTest - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[normalize-space()='LEADS'] (tried for 90 second(s) with 500 milliseconds interval)
+13:21:48.052 [main] ERROR com.qa.hs.tests.LoginTest - TEST FAILED : contractsNotSignedTest
+13:21:48.053 [main] ERROR com.qa.hs.tests.LoginTest - org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Unknown', ip: 'Unknown', os.name: 'Linux', os.arch: 'amd64', os.version: '4.6.4-040604-generic', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.XVWm46}, goog:chromeOptions: {debuggerAddress: localhost:36299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8fbc01d9774be060f37c1d736f79902
+13:21:48.226 [main] INFO  com.qa.hs.tests.LoginTest - TEST FINISHED

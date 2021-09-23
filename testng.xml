@@ -4,17 +4,17 @@
 	<listeners>
 		<listener class-name="com.qa.hs.keyword.listeners.Listener"/>
 	</listeners>
-	  <test thread-count="5" name="LoginPageTest">
+	 <!-- <test thread-count="5" name="LoginPageTest">
 		<classes>
 			<class name="com.qa.hs.tests.LoginTest" />
 		</classes>
 	</test>
-	<!-- <test thread-count="5" name="LeadsPageCreateContactTest">
+	 <test thread-count="5" name="LeadsPageCreateContactTest">
 		<classes>
 			<class name="com.qa.hs.tests.LoginTest" />
 			<class name="com.qa.hs.tests.LeadsModuleCreateContactTest" />
 		</classes>  
-	</test> -->
+	</test> 
 
 	<test thread-count="5" name="LeadsPageEditFormTest">
 
@@ -24,7 +24,7 @@
 		</classes>
 
 	</test> 
-	 <!--  <test thread-count="5" name="SalesModuleAllocatUnitIndividualRealtorTest">
+	 <test thread-count="5" name="SalesModuleAllocatUnitIndividualRealtorTest">
 
 		<classes>
 			<class name="com.qa.hs.tests.LoginTest" />
@@ -38,6 +38,14 @@
 			<class name="com.qa.hs.tests.SalesModuleAllocatUnitGroupRealtorsTest" />
 		</classes>
 	</test>  -->
+	<test thread-count="5" name="ContractsNotSignedTest">
+
+		<classes>
+			<class name="com.qa.hs.tests.LoginTest" />
+			<class name="com.qa.hs.tests.ContractsNotSignedTest" />
+		</classes>
+	</test>  
+	
 
 	
 

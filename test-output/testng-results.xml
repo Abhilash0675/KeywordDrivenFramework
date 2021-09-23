@@ -1,71 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2021-09-21T05:51:52Z" name="TestSuite1" finished-at="2021-09-21T05:52:14Z" duration-ms="21711">
-    <groups>
-    </groups>
-    <test started-at="2021-09-21T05:51:52Z" name="LoginPageTest" finished-at="2021-09-21T05:52:14Z" duration-ms="21711">
-      <class name="com.qa.hs.tests.LoginTest">
-        <test-method is-config="true" signature="first()[pri:0, instance:com.qa.hs.tests.LoginTest@4ce7fffa]" started-at="2021-09-21T05:51:52Z" name="first" finished-at="2021-09-21T05:51:52Z" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- first -->
-        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.hs.tests.LoginTest@4ce7fffa]" started-at="2021-09-21T05:51:52Z" name="start" finished-at="2021-09-21T05:51:57Z" duration-ms="4650" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LoginTest@4ce7fffa]" started-at="2021-09-21T05:51:57Z" name="loginTest" finished-at="2021-09-21T05:52:13Z" duration-ms="16448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.qa.hs.tests.LoginTest@4ce7fffa]" started-at="2021-09-21T05:52:13Z" name="end" finished-at="2021-09-21T05:52:14Z" duration-ms="585" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.LoginTest@4ce7fffa]" started-at="2021-09-21T05:52:14Z" name="quit" finished-at="2021-09-21T05:52:14Z" duration-ms="16" status="PASS">
-=======
 <testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-14T16:56:26Z" name="TestSuite1" finished-at="2021-09-14T16:57:44Z" duration-ms="77741">
+  <suite started-at="2021-09-23T07:41:21Z" name="TestSuite1" finished-at="2021-09-23T07:42:43Z" duration-ms="81853">
     <groups>
     </groups>
-    <test started-at="2021-09-14T16:56:26Z" name="LeadsPageEditFormTest" finished-at="2021-09-14T16:57:44Z" duration-ms="77741">
+    <test started-at="2021-09-23T07:41:21Z" name="ContractsNotSignedTest" finished-at="2021-09-23T07:42:43Z" duration-ms="81853">
+      <class name="com.qa.hs.tests.ContractsNotSignedTest">
+        <test-method signature="contractsNotSignedTest()[pri:1, instance:com.qa.hs.tests.ContractsNotSignedTest@6127a7e]" started-at="2021-09-23T07:41:41Z" name="contractsNotSignedTest" finished-at="2021-09-23T07:42:41Z" duration-ms="60055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contractsNotSignedTest -->
+      </class> <!-- com.qa.hs.tests.ContractsNotSignedTest -->
       <class name="com.qa.hs.tests.LoginTest">
-        <test-method is-config="true" signature="first()[pri:0, instance:com.qa.hs.tests.LoginTest@53fb3dab]" started-at="2021-09-14T16:56:26Z" name="first" finished-at="2021-09-14T16:56:26Z" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="first()[pri:0, instance:com.qa.hs.tests.LoginTest@75f95314]" started-at="2021-09-23T07:41:21Z" name="first" finished-at="2021-09-23T07:41:21Z" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- first -->
-        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.hs.tests.LoginTest@53fb3dab]" started-at="2021-09-14T16:56:26Z" name="start" finished-at="2021-09-14T16:56:28Z" duration-ms="1205" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.qa.hs.tests.LoginTest@75f95314]" started-at="2021-09-23T07:41:21Z" name="start" finished-at="2021-09-23T07:41:25Z" duration-ms="4767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LoginTest@53fb3dab]" started-at="2021-09-14T16:56:28Z" name="loginTest" finished-at="2021-09-14T16:56:39Z" duration-ms="11307" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LoginTest@75f95314]" started-at="2021-09-23T07:41:26Z" name="loginTest" finished-at="2021-09-23T07:41:41Z" duration-ms="15910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.qa.hs.tests.LoginTest@53fb3dab]" started-at="2021-09-14T16:57:44Z" name="end" finished-at="2021-09-14T16:57:44Z" duration-ms="91" status="PASS">
+        <test-method is-config="true" signature="end()[pri:0, instance:com.qa.hs.tests.LoginTest@75f95314]" started-at="2021-09-23T07:42:41Z" name="end" finished-at="2021-09-23T07:42:43Z" duration-ms="1067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.LoginTest@53fb3dab]" started-at="2021-09-14T16:57:44Z" name="quit" finished-at="2021-09-14T16:57:44Z" duration-ms="257" status="PASS">
->>>>>>> b2648c77461c3ab7a3e1f5ba1ebf598d254a3242
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.qa.hs.tests.LoginTest@75f95314]" started-at="2021-09-23T07:42:43Z" name="quit" finished-at="2021-09-23T07:42:43Z" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.qa.hs.tests.LoginTest -->
-<<<<<<< HEAD
-    </test> <!-- LoginPageTest -->
-=======
-      <class name="com.qa.hs.tests.LeadsModuleEditFormTest">
-        <test-method signature="leadsTest()[pri:1, instance:com.qa.hs.tests.LeadsModuleEditFormTest@cb0755b]" started-at="2021-09-14T16:56:39Z" name="leadsTest" finished-at="2021-09-14T16:57:44Z" duration-ms="65112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- leadsTest -->
-      </class> <!-- com.qa.hs.tests.LeadsModuleEditFormTest -->
-    </test> <!-- LeadsPageEditFormTest -->
->>>>>>> b2648c77461c3ab7a3e1f5ba1ebf598d254a3242
+    </test> <!-- ContractsNotSignedTest -->
   </suite> <!-- TestSuite1 -->
 </testng-results>
