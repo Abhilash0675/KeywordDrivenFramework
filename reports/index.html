@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Sep 23, 2021 01:16:41 pm</span>
+                    <span class="badge badge-primary">Sep 26, 2021 06:49:38 pm</span>
                 </a>
             </li>
         </ul>
@@ -72,15 +72,7 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
-        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
-          <span class="icon-holder">
-            <i class="fa fa-bug"></i>
-          </span>
-          <span class="title">Exception</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -109,7 +101,7 @@
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
+						
 						
 						
 						
@@ -132,8 +124,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">loginTest</p>
-							<p class="duration text-sm">0h 0m 29s+922ms</p>
-							<span class="datetime">13:16:50 pm</span>
+							<p class="duration text-sm">0h 0m 23s+783ms</p>
+							<span class="datetime">18:49:47 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -141,9 +133,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">loginTest</h5>
-									<span class='badge badge-success'>09.23.2021 13:16:50</span>
-									<span class='badge badge-danger'>09.23.2021 13:17:20</span>
-									<span class='badge badge-default'>0h 0m 29s+922ms</span>
+									<span class='badge badge-success'>09.26.2021 18:49:47</span>
+									<span class='badge badge-danger'>09.26.2021 18:50:11</span>
+									<span class='badge badge-default'>0h 0m 23s+783ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -160,7 +152,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>1:17:20 pm</td>
+				<td>6:50:11 pm</td>
 				<td>
 						Test Passed
 				</td>
@@ -170,28 +162,28 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="2"
+				<li class="test-item"  status="pass" test-id="2"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">contractsNotSignedTest</p>
-							<p class="duration text-sm">0h 4m 27s+694ms</p>
-							<span class="datetime">13:17:20 pm</span>
+							<p class="duration text-sm">0h 0m 45s+396ms</p>
+							<span class="datetime">18:50:11 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">contractsNotSignedTest</h5>
-									<span class='badge badge-success'>09.23.2021 13:17:20</span>
-									<span class='badge badge-danger'>09.23.2021 13:21:48</span>
-									<span class='badge badge-default'>0h 4m 27s+694ms</span>
+									<h5 class="test-status text-pass">contractsNotSignedTest</h5>
+									<span class='badge badge-success'>09.26.2021 18:50:11</span>
+									<span class='badge badge-danger'>09.26.2021 18:50:56</span>
+									<span class='badge badge-default'>0h 0m 45s+396ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -207,230 +199,15 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>1:21:48 pm</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>6:50:56 pm</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[normalize-space()='LEADS'] (tried for 90 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.hs.keyword.engine.KeyWordEngine.startExecution(KeyWordEngine.java:176)
-	at com.qa.hs.tests.ContractsNotSignedTest.contractsNotSignedTest(ContractsNotSignedTest.java:12)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=91.0.4472.77)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Unknown', ip: 'Unknown', os.name: 'Linux', os.arch: 'amd64', os.version: '4.6.4-040604-generic', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.XVWm46}, goog:chromeOptions: {debuggerAddress: localhost:36299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b8fbc01d9774be060f37c1d736f79902
-*** Element info: {Using=xpath, value=//div[normalize-space()='LEADS']}
-	at jdk.internal.reflect.GeneratedConstructorAccessor30.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 27 more
-</textarea>
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>1:21:48 pm</td>
-				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=91.0.4472.77)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Unknown', ip: 'Unknown', os.name: 'Linux', os.arch: 'amd64', os.version: '4.6.4-040604-generic', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.XVWm46}, goog:chromeOptions: {debuggerAddress: localhost:36299}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b8fbc01d9774be060f37c1d736f79902
-	at jdk.internal.reflect.GeneratedConstructorAccessor30.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at com.qa.hs.tests.BaseClass.getScreenShotPath(BaseClass.java:84)
-	at com.qa.hs.keyword.listeners.Listener.onTestFailure(Listener.java:49)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea>
+						Test Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
 </div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="test-content scrollable">
-		<div class="test-content-tools">
-			<ul>
-				<li>
-					<a class="back-to-test" href="javascript:void(0)">
-					<i class="fa fa-arrow-left"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-content-detail">
-			<div class="detail-body"></div>
-		</div>
-	</div>
-</div><div class="test-wrapper row exception-view attributes-view">
-	<div class="test-list">
-		<div class="test-list-tools">
-			<ul class="tools pull-left">
-				<li>
-					<a href="">
-					<span class="font-size-14">Exception</span>
-					</a>
-				</li>
-			</ul>
-			<ul class="tools text-right">
-				<li>
-					<a href="#">
-					<span class="badge badge-primary">2</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-list-wrapper scrollable">
-			<ul class="test-list-item">
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">org.openqa.selenium.TimeoutException</p>
-							<p class="duration text-sm">1 tests</p>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>org.openqa.selenium.TimeoutException</h4>
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>13:17:20 pm</td>
-									<td class='linked' test-id='2'>
-										contractsNotSignedTest
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</li>
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">org.openqa.selenium.NoSuchWindowException</p>
-							<p class="duration text-sm">1 tests</p>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>org.openqa.selenium.NoSuchWindowException</h4>
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>13:17:20 pm</td>
-									<td class='linked' test-id='2'>
-										contractsNotSignedTest
-									</td>
-								</tr>
-							</tbody>
-						</table>
 					</div>
 				</li>
 			</ul>
@@ -464,12 +241,12 @@ Session ID: b8fbc01d9774be060f37c1d736f79902
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='50%'>
-						<b>1</b> tests passed
+					<div><small data-tooltip='100%'>
+						<b>2</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='50%'><b>1</b> tests failed, 
+						<small data-tooltip='0%'><b>0</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -487,9 +264,9 @@ Session ID: b8fbc01d9774be060f37c1d736f79902
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='33.333%'><b>1</b> events passed</small></div>
+					<div><small data-tooltip='100%'><b>2</b> events passed</small></div>
 					<div>
-						<small data-tooltip='66.667%'><b>2</b> events failed, 
+						<small data-tooltip='0%'><b>0</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -507,7 +284,7 @@ Session ID: b8fbc01d9774be060f37c1d736f79902
 							<h2 class="font-size-28 font-weight-light mt-3">2</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>50.00%</span>
+							<span>100.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -523,7 +300,7 @@ Session ID: b8fbc01d9774be060f37c1d736f79902
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Sep 23, 2021 01:16:41 pm</h4>
+							<h4 class="font-weight-light mt-4">Sep 26, 2021 06:49:38 pm</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -539,7 +316,7 @@ Session ID: b8fbc01d9774be060f37c1d736f79902
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 5m 6s+890ms</h4>
+							<h4 class="font-weight-light mt-4">0h 1m 19s+179ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -570,13 +347,13 @@ Session ID: b8fbc01d9774be060f37c1d736f79902
 <script>
 	var statusGroup = {
 	    parentCount: 2,
-		passParent: 1,
-		failParent: 1,
+		passParent: 2,
+		failParent: 0,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 1,
+		exceptionsParent: 0,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -597,9 +374,9 @@ Session ID: b8fbc01d9774be060f37c1d736f79902
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 3,
-		passEvents: 1,
-		failEvents: 2,
+		eventsCount: 2,
+		passEvents: 2,
+		failEvents: 0,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -611,7 +388,7 @@ Session ID: b8fbc01d9774be060f37c1d736f79902
 </script>
 <script>
 	var timeline = {
-	        "loginTest":29.922,"contractsNotSignedTest":267.694
+	        "loginTest":23.783,"contractsNotSignedTest":45.396
 	};
 </script>
                 </div>

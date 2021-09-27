@@ -12,8 +12,10 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -211,6 +213,30 @@ public class KeyWordEngine extends BaseClass {
 						jse.executeScript("arguments[0].click();", element);
 						log.info("Action Performed : "+testStep);
 						//System.out.println("done");
+					}else if (action.equalsIgnoreCase("sign")) {
+						//click and hold approach
+						System.out.println("started");
+						Actions ac =  new Actions(driver);
+						Point p = element.getLocation();
+						ac.moveToElement(element).clickAndHold().moveByOffset(p.getX(),p.getY()).moveByOffset(p.getX(),p.getY()+30).release().build().perform();
+						Thread.sleep(3000);
+						System.out.println("ended");
+
+					}else if (action.equalsIgnoreCase("sign2")) {
+						//two dots approach
+						System.out.println("started2");
+						Point p = element.getLocation();
+						Actions ac =  new Actions(driver);
+						ac.moveByOffset(p.getX()+10, p.getY()+20).click();
+						System.out.println("ended2");
+						Thread.sleep(3000);
+					}else if (action.equalsIgnoreCase("sign3")){
+						//drag and drop approach
+						System.out.println("started3");
+						Actions ac =  new Actions(driver);
+						ac.dragAndDrop(element, driver.findElement(By.xpath(value)));
+						System.out.println("ended3");
+						Thread.sleep(2000);
 					}
 					
 					locatorType = null;
